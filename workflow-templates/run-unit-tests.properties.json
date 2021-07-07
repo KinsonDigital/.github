@@ -1,0 +1,11 @@
+{
+    "name": "Run Unit Tests Workflow",
+    "description": "Unit Test Workflow Template.",
+    "iconName": "tests-icon",
+    "categories": [
+        "C#"
+    ],
+    "filePatterns": [
+        ".*\\.csproj$"
+    ]
+}
