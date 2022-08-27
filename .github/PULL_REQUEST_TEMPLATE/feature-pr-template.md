@@ -1,3 +1,4 @@
+<!--suppress HtmlDeprecatedAttribute -->
 <h1 style="font-weight:bold" align="center">Feature Pull Request</h1>
 <h2 style="font-weight:bold" align="center">✅Code Review Checklist✅</h2>
 
