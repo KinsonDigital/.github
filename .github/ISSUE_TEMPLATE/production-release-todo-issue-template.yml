@@ -41,7 +41,7 @@ body:
     options:
     - label: The GitHub release has been created and is correct. 
     - label: If applicable, the NuGet package has been successfully deployed to [nuget.org](https://www.nuget.org/).
-    - label: Announcement of release on [Twitter](https://twitter.com/KDCoder) verified. _(Announcement should be performed automatically with the release)_.
+    - label: Announcement of release on [Twitter](https://twitter.com/KDCoder) verified _(if applicable)_. _(Announcement should be performed automatically with the release)_.
     - label: Announcement has been pushed to the [Discord](https://discord.gg/qewu6fNgv7) channel.
 
 - type: textarea
