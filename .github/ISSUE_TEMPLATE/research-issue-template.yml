@@ -1,5 +1,5 @@
 name: 🔬 Research Item
-description: Create an issue to perform research _(Project maintainers only)_.
+description: Create an issue to perform research (Project maintainers only).
 labels: ["🔬research"]
 title: "🔬"
 body:

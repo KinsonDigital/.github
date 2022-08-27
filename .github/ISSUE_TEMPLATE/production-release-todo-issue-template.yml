@@ -1,5 +1,5 @@
-name: 🚀 Release To Do List
-description: Used to perform a release _(Project maintainers only)_.
+name: 🚀 Production Release To Do List
+description: Used to perform a release (Project maintainers only).
 title: "🚀Release To Production"
 body:
 - type: textarea
