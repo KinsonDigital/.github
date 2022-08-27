@@ -1,5 +1,5 @@
 name: 🔬 Research Item
-description: Create an issue to perform research (Project maintainers only).
+description: Create an issue to perform research _(Project maintainers only)_.
 labels: ["🔬research"]
 title: "🔬"
 body:
@@ -35,7 +35,7 @@ body:
     description: The items to complete in order to satisfy the Definition of Done.
     value: |
       **This issue is finished when:**
-      - [ ] Research complete and issues created (if needed).
+      - [ ] Research complete and issues created _(if needed)_.
       - [ ] If any issues were created, they have been added to the _**Related Work**_ section below.
   validations:
     required: true
