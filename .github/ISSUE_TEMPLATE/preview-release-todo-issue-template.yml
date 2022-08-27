@@ -1,6 +1,6 @@
 name: 🚀 Preview Release To Do List
 description: Used to perform a release (Project maintainers only).
-title: "🚀Release To Preview"
+title: "🚀Preview Release"
 body:
 - type: textarea
   attributes:
