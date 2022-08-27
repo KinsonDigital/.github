@@ -1,5 +1,5 @@
 name: 🚧 Project Item
-description: Create an issue for a project (Project maintainers only).
+description: Create an issue for a project (Project maintainers only)_.
 title: "🚧"
 body:
 - type: checkboxes
@@ -35,8 +35,8 @@ body:
     options:
     - label: Change type labels added to this issue.  Refer to the _**Change Type Labels**_ section below.
     - label: Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
-    - label: Issue linked to the correct project _(if required)_.
-    - label: Issue linked to the correct milestone _(if required)_.
+    - label: Issue linked to the correct project _(if applicable)_.
+    - label: Issue linked to the correct milestone _(if applicable)_.
     - label: Draft pull request created and linked to this issue _(only required with code changes)_.
 
 - type: textarea
