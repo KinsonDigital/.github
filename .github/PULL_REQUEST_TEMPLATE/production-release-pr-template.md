@@ -39,4 +39,4 @@
 
 - [ ] Milestone assigned matches the milestone of the associated issue.
 
-- [ ] A QA issue has been created and manual QA testing has been performed for the changes being released.
+- [ ] A QA issue has been created and manual QA testing has been performed for the changes being released _(if applicable)_.
