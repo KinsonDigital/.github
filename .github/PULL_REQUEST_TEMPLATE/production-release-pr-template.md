@@ -24,14 +24,7 @@
 - [ ] Associated issue exists and is linked to this pull request.
   - One issue per pull request.
 
-- [ ] Pull request title matches the example below, using the correct version.
-  <details closed><summary>Example</summary>
-    
-    ``` xml
-    Syntax: 🚀Release To Production - v<major>.<minor>.<patch>
-    Example: 🚀Release To Production - v1.2.3
-    ```
-  </details>
+- [ ] Pull request title is set to _**🚀Production Release**_.
 
 - [ ] A `🚀Production Release` label has been added to this PR. 
 

@@ -38,14 +38,7 @@
   - [ ] Associated issue exists and is linked to this pull request.
   - One issue per pull request.
 
-- [ ] Pull request title matches the example below, using the correct version.
-  <details closed><summary>Example</summary>
-    
-    ``` xml
-    Syntax: 🚀Release To Preview - v<major>.<minor>.<patch>-preview.<prev-num>
-    Example: 🚀Release To Preview - v1.2.3-preview.4
-    ```
-  </details>
+- [ ] Pull request title is set to _**🚀Preview Release**_.
 
 - [ ] A `🚀Preview Release` label has been added to this PR. 
 
