@@ -35,7 +35,7 @@
     ```
   </details>
 
-  - [ ] Associated issue exists and is linked to this pull request.
+- [ ] Associated issue exists and is linked to this pull request.
   - One issue per pull request.
 
 - [ ] Pull request title is set to _**🚀Preview Release**_.
