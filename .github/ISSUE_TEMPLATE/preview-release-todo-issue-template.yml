@@ -12,7 +12,6 @@ body:
       - #20
     description: The list of issues that will be released.
   validations:
-    required: true
     render: markdown
 
 
@@ -21,13 +20,15 @@ body:
     label: Perform Release ToDo List
     description: Complete the following items to perform a release.
     options:
-    - label: Release PR linked to this issue.
-    - label: Add `🚀Preview Release` label to this issue. 
     - label: All issues listed in the **_Issues Released_** section above.
     - label: All issues in the _**Issues Released**_ section are closed and all issue tasks are complete.
+    - label: Add `🚀Preview Release` label to this issue.
+    - label: Issue is assigned to a project.
+    - label: Issue is assigned to a milestone.
+    - label: Release PR linked to this issue.
     - label: All unit tests have been executed locally and have passed. _(Check out the appropriate release branch before running tests)_.
-    - label: Version in project file updated _(All changes made directly on the release branch)_.
-    - label: Release notes created and added _(All changes made directly on the release branch)_.
+    - label: Version in project file updated _(All changes made directly on the release branch (preview/v#.#.#-preview.#))_.
+    - label: Release notes created and added _(All changes made directly on the release branch (preview/v#.#.#-preview.#))_.
     - label: Manual QA Testing completed _(if applicable)_.
     - label: Pull request has been approved and merged into a release branch before performing the release. _(Releases are performed on preview branches)_.
     - label: Release to **_preview_** complete. _(The release is performed by running the `🚀Preview Release` workflow)_.
@@ -40,9 +41,9 @@ body:
     description: Verify that release went smoothly.
     options:
     - label: The GitHub release has been created and is correct. 
-    - label: If applicable, the NuGet package has been successfully deployed to [nuget.org](https://www.nuget.org/).
+    - label: The NuGet package has been successfully deployed to [nuget.org](https://www.nuget.org/) _(if applicable)_.
     - label: Announcement of release on [Twitter](https://twitter.com/KDCoder) verified _(if applicable)_. _(Announcement should be performed automatically with the release)_.
-    - label: Announcement has been pushed to the [Discord](https://discord.gg/qewu6fNgv7) channel.
+    - label: Announcement has been pushed to the [Discord](https://discord.gg/qewu6fNgv7) channel _(if applicable)_.
 
 - type: textarea
   attributes:
@@ -61,12 +62,14 @@ body:
       **_<details closed><summary>Version Updating</summary>_**
       
       The version can be updated by setting the values of the `<Version/>` and `<FileVersion/>` XML tags in the project file.
+      The `<Version/>` and `<FileVersion/>` values can hold production and preview releases.
+      The `<AssemblyVersion/>` XML tag can only hold production values.  Preview values are not aloud.
 
       ``` xml
-      <!--Syntax for preview releases-->
+      <!--Preview Release Example-->
       <Version>1.2.3-preview.4</Version>
       <FileVersion>1.2.3-preview.4</FileVersion>
-
+      <AssemblyVersion>1.2.3</AssemblyVersion>
       ```
       </details>
 
@@ -74,17 +77,17 @@ body:
 
       **_<details closed><summary>Release Notes</summary>_**
 
-      The release notes go into the appropriate folder:
-      - **Preview Release Notes** go into the **_~/Documentation/ReleaseNotes/PreviewReleases_** folder.
-
+      By default, the release notes go into a **_ReleaseNotes_** folder inside of the **_Documentation_** folder with the **_Documentation_** folder at the root of the repository.
+      Preview release notes path: **_./Documentation/ReleaseNotes/PreviewReleases_**.
+    
       Release note file names must follow a particular syntax and are in markdown format so they can be added to the release.
 
       #### Release Notes File Name Syntax:
       - **Preview Release Notes:**
-        - **Syntax:** Release-Notes-v\<_major_\>.\<_minor_\>.\<_patch_\>-preview.\<_prev-num_\>.md
-        - **Example:** Release-Notes-v1.0.0-preview.4.md
+        - **Syntax:** Release-Notes-v#.#.#-preview.#.md
+        - **Example:** Release-Notes-v1.2.3-preview.4.md
 
-      Changes such as release notes and version updates should be committed to the same source branch in the pull request attached to this issue.
+      Changes such as release notes and version updates should be committed to the destination branch (preview/v#.#.#-preview.#) in the pull request attached to this issue.
       </details>
 
       ---
