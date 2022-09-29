@@ -84,7 +84,7 @@ body:
 
       #### Release Notes File Name Syntax:
       - **Production Release Notes:**
-        - **Syntax:** Release-Notes-v\<_major_\>.\<_minor_\>.\<_patch_\>.md
+        - **Syntax:** Release-Notes-v#.#.#.md
         - **Example:** Release-Notes-v1.2.3.md
 
       Changes such as release notes and version updates should be committed to the destination branch (master) in the pull request attached to this issue.

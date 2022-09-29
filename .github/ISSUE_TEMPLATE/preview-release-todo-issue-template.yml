@@ -84,7 +84,7 @@ body:
 
       #### Release Notes File Name Syntax:
       - **Preview Release Notes:**
-        - **Syntax:** Release-Notes-v\<_major_\>.\<_minor_\>.\<_patch_\>-preview.\<_prev-num_\>.md
+        - **Syntax:** Release-Notes-v#.#.#-preview.#.md
         - **Example:** Release-Notes-v1.2.3-preview.4.md
 
       Changes such as release notes and version updates should be committed to the destination branch (preview/v#.#.#-preview.#) in the pull request attached to this issue.
