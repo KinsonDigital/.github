@@ -63,7 +63,7 @@ body:
       
       The version can be updated by setting the values of the `<Version/>` and `<FileVersion/>` XML tags in the project file.
       The `<Version/>` and `<FileVersion/>` values can hold production and preview releases.
-      The `<AssemblyVersion/>` XML tag can only hold production values.  Preview values are not aloud.
+      The `<AssemblyVersion/>` XML tag can only hold production values.  Preview values are not allowed.
 
       ``` xml
       <!--Production Release Example-->
