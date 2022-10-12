@@ -1,6 +1,6 @@
 <!--suppress HtmlDeprecatedAttribute -->
 <h1 style="font-weight:bold" align="center">Preview Feature Pull Request</h1>
-<h2 style="font-weight:bold" align="center">✅Code Review Checklist✅</h2>
+<h2 style="font-weight:bold" align="center">📋Review Checklist📋</h2>
 
 - [ ] The **_head(source)_** branch for this pull request is a **_preview feature_** branch, with the correct naming syntax, in the following example:
   - A **_head(source)_** branch is the branch being merged into a target branch.
