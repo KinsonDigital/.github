@@ -7,7 +7,7 @@ body:
   attributes:
     label: Complete The Items Below
     options:
-    - label: I have updated the title without removing the 🐛 emoji.
+    - label: I have updated the title without removing the 🔥 emoji.
       required: true
     - label: I searched whether or not an issue already exists for the bug I encountered.
       required: true
