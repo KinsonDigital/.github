@@ -24,7 +24,7 @@
 
 - [ ] Pull request title matches the title of the associated issue.
 
-- [ ] A `preview` label has been added to the pull request.
+- [ ] A `🔥Hot Fix Release🚀` label has been added to the pull request.
 
 - [ ] The labels attached to this PR match the labels attached to the associated issue.
 
