@@ -1,5 +1,5 @@
 name: 🔥 HotFix
-description: Create a hotfix release issue for a project (Project maintainers only).
+description: Create a hotfix release issue for the project (Project maintainers only).
 title: "🔥"
 labels: [bug, 🔥Hot Fix Release🚀]
 body:
