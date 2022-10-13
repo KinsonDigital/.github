@@ -4,7 +4,7 @@
 -->
 <!--suppress HtmlDeprecatedAttribute -->
 <h1 style="font-weight:bold" align="center">Production Release Pull Request</h1>
-<h2 style="font-weight:bold" align="center">✅Code Review Checklist✅</h2>
+<h2 style="font-weight:bold" align="center">📋Review Checklist📋</h2>
 
 - [ ] The **_head(source)_** branch for this pull request is a **_release_** branch, with the correct naming syntax, in the following example:
   - A **_head(source)_** branch is the branch being merged into a target branch.
@@ -21,12 +21,14 @@
 
 - [ ] The **_head(source)_** branch for this pull request is created from a **_development_** branch with the name **_develop_**.
 
+💡For more information on branching, refer to the project's [branching documentation](../../Documentation/Branching.md).
+
 - [ ] Associated issue exists and is linked to this pull request.
   - One issue per pull request.
 
 - [ ] Pull request title is set to _**🚀Production Release**_.
 
-- [ ] A `🚀Production Release` label has been added to this PR. 
+- [ ] A `🚀Production Release` label has been added to this pull request. 
 
 - [ ] Project assigned matches the project of the associated issue.
 

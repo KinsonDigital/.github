@@ -1,6 +1,6 @@
 <!--suppress HtmlDeprecatedAttribute -->
 <h1 style="font-weight:bold" align="center">Feature Pull Request</h1>
-<h2 style="font-weight:bold" align="center">✅Code Review Checklist✅</h2>
+<h2 style="font-weight:bold" align="center">📋Review Checklist📋</h2>
 
 - [ ] The **_head(source)_** branch for this pull request is a **_feature_** branch, with the correct naming syntax, in the following example:
   - A **_head(source)_** branch is the branch being merged into a target branch.
@@ -31,7 +31,7 @@
 - [ ] Milestone assigned matches the milestone of the associated issue.
 
 - [ ] My code follows the coding style of this project.
-  - The style is enforced by the **_.editorconfig_** files in the project and displayed as warnings.  If there is an edge case, reach out and let's discuss it.
+  - The style is enforced by the **_.editorconfig_** files in the project and displayed as warnings.  If there is an edge case, reach out, and let's discuss it.
 
 - [ ] I have manually tested my code changes to the best of my ability.
 

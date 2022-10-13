@@ -17,7 +17,7 @@ body:
 
 - type: checkboxes
   attributes:
-    label: Perform Release ToDo List
+    label: Pre-Release ToDo List
     description: Complete the following items to perform a release.
     options:
     - label: All issues listed in the **_Issues Released_** section above.
@@ -63,7 +63,7 @@ body:
       
       The version can be updated by setting the values of the `<Version/>` and `<FileVersion/>` XML tags in the project file.
       The `<Version/>` and `<FileVersion/>` values can hold production and preview releases.
-      The `<AssemblyVersion/>` XML tag can only hold production values.  Preview values are not aloud.
+      The `<AssemblyVersion/>` XML tag can only hold production values.  Preview values are not allowed.
 
       ``` xml
       <!--Preview Release Example-->
