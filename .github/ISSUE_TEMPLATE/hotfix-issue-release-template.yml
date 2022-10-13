@@ -103,12 +103,12 @@ body:
     value: |
       **_<details closed><summary>HotFix Purpose</summary>_**
 
-      The purpose of a hotfix is to release a fix to something wrong to production as soon as possible.
-      This concept should be treated very carefully.  This should only happen if the software is simply broken and
+      The purpose of a hotfix is to release a fix to production as soon as possible in order to fix a major problem.
+      This concept should be treated very carefully and should only happen if the software is simply broken and
       _**UNUSABLE**_.  If there is a simple workaround or the issue is minor, then a hotfix should not be required.
 
-      A hotfix should be a rare occasion and if it has been occurring often, then the development and release process
-      should be reviewed for improvements to try and help prevent a hotfix from occurring.
+      If a hotfix is recurring, then the development and release process
+      should be reviewed for improvements to prevent a hotfix from happening.
       </details>
 
       ---
