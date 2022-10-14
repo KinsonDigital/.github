@@ -36,7 +36,7 @@ body:
     id: extra-info
     attributes:
       label: Relevant Information
-      description: Please enter ANY testing related information here.
+      description: Please enter ANY testing-related information here.
 
   - type: textarea
     id: dependencies
