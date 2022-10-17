@@ -10,28 +10,6 @@ body:
       - label: I have linked all issues that will be tested for this release.
         required: true
 
-  - type: input
-    id: version
-    attributes:
-      label: Version Being Tested
-      description: |
-        Version Format: v<major.minor.patch>[-preview.<prev-num>]
-        Examples: v1.0.0 or v1.2.3-preview.4
-    validations:
-      required: true
-
-  - type: textarea
-    id: test-list
-    attributes:
-      label: Issues To Test
-      description: A list of all the issues that will be tested.
-      placeholder: |
-        Example:
-          - [ ] #10
-          - [ ] #20
-    validations:
-      required: false
-
   - type: textarea
     id: extra-info
     attributes:
