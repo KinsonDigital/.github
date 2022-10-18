@@ -7,7 +7,7 @@ body:
     attributes:
       label: Complete The Item Below
       options:
-      - label: I have linked all issues that will be tested for this release.
+      - label: I have reviewed and tested all of the issues in the linked milestone.
         required: true
 
   - type: textarea
