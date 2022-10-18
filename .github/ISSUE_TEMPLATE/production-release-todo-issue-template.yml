@@ -8,7 +8,7 @@ body:
     label: Pre-Release ToDo List
     description: Complete the following items to perform a release.
     options:
-    - label: All issues in the current milestone are closed and all issue tasks are complete.
+    - label: All issues in the assigned milestone are closed and all issue tasks are complete.
     - label: Add `🚀Production Release` label to this issue.  
     - label: Issue is assigned to a project.
     - label: Issue is assigned to a milestone.
