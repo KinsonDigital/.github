@@ -2,26 +2,13 @@ name: 🚀 Preview Release To Do List
 description: Used to perform a release (Project maintainers only).
 title: "🚀Preview Release"
 body:
-- type: textarea
-  attributes:
-    label: Issues Released
-    placeholder: |
-      Create a list of all the items being released.
-      Example:
-      - #10
-      - #20
-    description: The list of issues that will be released.
-  validations:
-    render: markdown
-
 
 - type: checkboxes
   attributes:
     label: Pre-Release ToDo List
     description: Complete the following items to perform a release.
     options:
-    - label: All issues listed in the **_Issues Released_** section above.
-    - label: All issues in the _**Issues Released**_ section are closed and all issue tasks are complete.
+    - label: All issues in the assigned milestone are closed and all issue tasks are complete.
     - label: Add `🚀Preview Release` label to this issue.
     - label: Issue is assigned to a project.
     - label: Issue is assigned to a milestone.
