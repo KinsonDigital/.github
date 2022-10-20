@@ -13,10 +13,6 @@ using Octokit;
 
 Script.Bootstrap(Args);
 
-Helpers.CurrentBranch();
-
-return;
-
 Write("Please enter the issue number for this preview feature pull request: ");
 
 var issueNumberInput = ReadLine();
