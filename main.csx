@@ -6,6 +6,7 @@
 #r "nuget: LibGit2Sharp, 0.26.2"
 #r "System.dll"
 
+using System.Reflection.Emit;
 using System.Linq;
 using System;
 using System.IO;
@@ -70,7 +71,19 @@ var newBranch = $"preview/feature/{issueNumber}-{branchDescription}";
 
 Helpers.CreateBranch(newBranch);
 Helpers.Checkout(newBranch);
-Helpers.Push(newBranch);
+
+WriteLine("Please enter your user name: ");
+var userName = ReadLine();
+userName = string.IsNullOrEmpty(userName) ? string.Empty : userName;
+
+Write("Please enter your password: ");
+
+var password = Helpers.GetPassword();
+
+password = string.IsNullOrEmpty(password) ? string.Empty : password;
+WriteLine();
+
+// Helpers.Push(userName, password, newBranch);
 
 
 

@@ -3,6 +3,7 @@
 #load "Script.csx"
 #r "nuget: LibGit2Sharp, 0.26.2"
 
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 using LibGit2Sharp;
 
@@ -135,14 +136,64 @@ public static class Helpers
         return false;
     }
 
-    public static void Push(string branch)
+    public static void Push(string userName, string pass, string branch)
     {
+        if (string.IsNullOrEmpty(userName))
+        {
+            throw new ArgumentNullException(nameof(userName), "Must not be null or empty.");
+        }
+
+        if (string.IsNullOrEmpty(pass))
+        {
+            throw new ArgumentNullException(nameof(pass), "Must not be null or empty.");
+        }
+        
         branch = $"refs/heads/{branch}";
+
         using var repo = new Repository(repoDirPath);
 
+        if (repo.Network.Remotes.Any(r => r.Name == "origin") is false)
+        {
+            WriteError("No remote with the name origin exits.  Could not push to remote.");
+            return;
+        }
+
+        var remote = repo.Network.Remotes["origin"];
+
         var options = new PushOptions();
+        options.CredentialsProvider = (url, userNameFromUrl, types) =>
+            new UsernamePasswordCredentials()
+            {
+                Username = userName,
+                Password = pass,
+            };
         
-        repo.Network.Push(repo.Branches[branch], options);
+        repo.Network.Push(remote, branch, options);
+    }
+
+    public static string GetPassword()
+    {
+        var pass = string.Empty;
+        ConsoleKey key;
+
+        do
+        {
+            var keyInfo = ReadKey(intercept: true);
+            key = keyInfo.Key;
+
+            if (key == ConsoleKey.Backspace && pass.Length > 0)
+            {
+                Write("\b \b");
+                pass = pass[0..^1];
+            }
+            else if (!char.IsControl(keyInfo.KeyChar))
+            {
+                Write("*");
+                pass += keyInfo.KeyChar;
+            }
+        } while (key != ConsoleKey.Enter);
+
+        return pass;
     }
 
     private static string CreateSpaces(int total)

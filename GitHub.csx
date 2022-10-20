@@ -4,6 +4,7 @@
 #r "nuget: Octokit, 3.0.0"
 
 using System.Net.Http;
+using System.Text;
 using System.Linq;
 using Octokit;
 
@@ -60,5 +61,31 @@ public static class GitHub
             .ToArray();
 
         return branches.Any(b => b == branch);
+    }
+
+    public async static Task CreatePullRequest(string title, string srcBranch, string targetBranch)
+    {
+        var prClient = client.PullRequest;
+
+        
+        var newPullRequest = new NewPullRequest(title, srcBranch, targetBranch);
+
+        newPullRequest.Draft = true;
+
+        var prResult = await prClient.Create(RepoOwner, RepoName, newPullRequest);
+    }
+
+    public async static Task<string> GetPRTemplate()
+    {
+        var contentClient = client.Repository.Content;
+
+        var rawData = await contentClient.GetRawContent(
+            RepoOwner,
+            RepoName,
+            ".github/PULL_REQUEST_TEMPLATE/preview-feature-pr-template.md");
+
+        var result = Encoding.Default.GetString(rawData);
+
+        return result;
     }
 }
