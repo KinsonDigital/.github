@@ -5,7 +5,6 @@
 
 using System.Runtime.CompilerServices;
 using LibGit2Sharp;
-using Microsoft.CodeAnalysis.Options;
 
 public static class Helpers
 {
