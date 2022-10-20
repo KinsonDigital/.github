@@ -15,7 +15,7 @@ Script.Bootstrap(Args);
 
 Write("Please enter the issue number for this preview feature pull request: ");
 
-var issueNumberInput = ReadLine();
+var issueNumberInput = "19";// ReadLine();
 
 var parseResult = int.TryParse(issueNumberInput, out var issueNumber);
 
@@ -44,7 +44,7 @@ if (Helpers.IsPreviewBranch(currentBranch) is false)
 
 Write("Please enter a simple branch description: ");
 
-var branchDescription = ReadLine()?.ToLower() ?? string.Empty;
+var branchDescription = "my-testing-branch";// ReadLine()?.ToLower() ?? string.Empty;
 
 if (string.IsNullOrEmpty(branchDescription))
 {
