@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet-script",
+            "args": [
+                "${workspaceRoot}/main.csx"
+            ],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Debug (Attach)",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
