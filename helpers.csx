@@ -137,9 +137,11 @@ public static class Helpers
 
     public static void Push(string branch)
     {
+        branch = $"refs/heads/{branch}";
         using var repo = new Repository(repoDirPath);
 
-        var options = new LibGit2Sharp.PushOptions();
+        var options = new PushOptions();
+        
         repo.Network.Push(repo.Branches[branch], options);
     }
 
