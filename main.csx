@@ -28,7 +28,7 @@ if (parseResult is false)
 // Check if the issue number exists
 var (exists, errorMsg) = await GitHub.IssueExists(issueNumber);
 
-if (exists)
+if (exists is false)
 {
     Helpers.WriteError(errorMsg);
     return;
