@@ -23,8 +23,9 @@ public static class GitHub
         {
             var productHeaderValue = new ProductHeaderValue("myscript");
             var credStore =
-                new InMemoryCredentialStore(new Credentials(""));
-            client = new GitHubClient(productHeaderValue, credStore);
+                new InMemoryCredentialStore(new Credentials("asdf"));
+            // client = new GitHubClient(productHeaderValue, credStore);
+            client = new GitHubClient(productHeaderValue);
         }
     }
 
@@ -69,6 +70,8 @@ public static class GitHub
 
     public async static Task<bool> CreatePullRequest(string title, string srcBranch, string targetBranch)
     {
+        srcBranch = $"KinsonDigitalAdmin:{srcBranch}";
+
         var prClient = client.PullRequest;
 
         var newPullRequest = new NewPullRequest(title, srcBranch, targetBranch)
