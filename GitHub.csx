@@ -1,12 +1,14 @@
 #nullable enable
 
 #load "helpers.csx"
+#load "enums.csx"
 #r "nuget: Octokit, 3.0.0"
 
 using System.Net.Http;
 using System.Text;
 using System.Linq;
 using Octokit;
+using Octokit.Internal;
 
 public static class GitHub
 {
@@ -20,7 +22,9 @@ public static class GitHub
         if (client is null)
         {
             var productHeaderValue = new ProductHeaderValue("myscript");
-            client = new GitHubClient(productHeaderValue);
+            var credStore =
+                new InMemoryCredentialStore(new Credentials(""));
+            client = new GitHubClient(productHeaderValue, credStore);
         }
     }
 
@@ -63,26 +67,54 @@ public static class GitHub
         return branches.Any(b => b == branch);
     }
 
-    public async static Task CreatePullRequest(string title, string srcBranch, string targetBranch)
+    public async static Task<bool> CreatePullRequest(string title, string srcBranch, string targetBranch)
     {
         var prClient = client.PullRequest;
 
-        
-        var newPullRequest = new NewPullRequest(title, srcBranch, targetBranch);
+        var newPullRequest = new NewPullRequest(title, srcBranch, targetBranch)
+        {
+            Draft = true,
+            Body = await GetPRTemplate(PRType.PreviewFeature),
+        };
 
-        newPullRequest.Draft = true;
+        try
+        {
+            WriteLine("Creating Pull Request:");
+            WriteLine($"\tSrc Branch: {srcBranch}");
+            WriteLine($"\tTarget Branch: {targetBranch}");
+            WriteLine();
 
-        var prResult = await prClient.Create(RepoOwner, RepoName, newPullRequest);
+            var prResult = await prClient.Create(RepoOwner, RepoName, newPullRequest);
+
+            var labelClient = client.Issue.Labels;
+
+            _ = await labelClient.AddToIssue(RepoOwner, RepoName, prResult.Number, new[] { "preview" });
+
+            WriteLine("Pull Request Created!!");
+            return true;
+        }
+        catch (Exception e)
+        {
+            Helpers.WriteError(e.Message);
+            return false;
+        }
     }
 
-    public async static Task<string> GetPRTemplate()
+    private async static Task<string> GetPRTemplate(PRType prType)
     {
+        var templateName = prType switch
+        {
+            PRType.Feature => "feature-pr-template",
+            PRType.PreviewFeature => "preview-feature-pr-template",
+            _ => throw new ArgumentOutOfRangeException(nameof(prType), "Enum out of range."),
+        };
+
         var contentClient = client.Repository.Content;
 
         var rawData = await contentClient.GetRawContent(
             RepoOwner,
             RepoName,
-            ".github/PULL_REQUEST_TEMPLATE/preview-feature-pr-template.md");
+            $".github/PULL_REQUEST_TEMPLATE/{templateName}.md");
 
         var result = Encoding.Default.GetString(rawData);
 

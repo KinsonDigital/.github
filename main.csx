@@ -6,13 +6,19 @@
 #r "nuget: LibGit2Sharp, 0.26.2"
 #r "System.dll"
 
-using System.Reflection.Emit;
 using System.Linq;
 using System;
 using System.IO;
 using Octokit;
 
 Script.Bootstrap(Args);
+
+var success = await GitHub.CreatePullRequest(
+    "🚧My Script PR", 
+    "preview/feature/19-my-testing-branch",
+    "preview/v1.2.3-preview.4");
+
+return;
 
 Write("Please enter the issue number for this preview feature pull request: ");
 
