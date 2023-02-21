@@ -22,7 +22,7 @@ Only the **KinsonDigital** team will merge changes that improve the library sign
 - **DO** leave a comment in the issue that you are interested in to let the project maintainers know that you would like to work on the issue.
 - **DON'T** start working on a PR until you get confirmation from a project maintainer and the issue is assigned to you.  We do not want to waste your time on an issue that you are not allowed to work on.
 - **DON'T** make PRs that don't directly affect the end user, such as style changes. These are best done as part of a PR related to the area in question. Documentation is fine (and encouraged!), as is useful to the end user.
-- **DO** follow [branch naming requirements and practices](https://github.com/KinsonDigital/.github/docs/Branching.md).
+- **DO** follow [branch naming requirements and practices](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md).
 - **DO** create PRs with the title and matching **EXACTLY** to the associated issue's title.  PRs with mismatching titles will not pass status checks and cannot be merged.
 - **DO** use [pull request templates](https://github.com/KinsonDigital/.github/tree/master/.github/PULL_REQUEST_TEMPLATE) when creating PRs.  Pull requests without a PR template will not be merged.
 - **DO** use [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6).
@@ -36,7 +36,7 @@ Contributions must maintain API signature and behavioral compatibility. Contribu
 
 <h2 style="border:0;font-weight:bold" align="center">Branching</h2>
 
-Go [here](./Documentation/Branching.md) for more information on <span style="color: #66B2FF;font-weight:bold">feature</span> and <span style="color: #9E269E;font-weight:bold">preview feature</span> branches.
+Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md) for more information on <span style="color: #66B2FF;font-weight:bold">feature</span> and <span style="color: #9E269E;font-weight:bold">preview feature</span> branches.
 
 The branching model for the project is more complicated than most OS projects but as an outside contributor, you only have to worry about 2 types of branches!
 
@@ -116,7 +116,7 @@ Sync the _**upstream**_ branch with your fork branch depending on if you are imp
 
 ### **2. Create a Working Branch**
 
-Create a <span style="color: #66B2FF;font-weight:bold">feature</span> or  branch using the syntax requirements in the _**[Branching Docs](https://github.com/KinsonDigital/.github/docs/Branching.md)**_ and push it to the fork remote. 
+Create a <span style="color: #66B2FF;font-weight:bold">feature</span> or  branch using the syntax requirements in the _**[Branching Docs](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md)**_ and push it to the fork remote. 
    - Creating a <span style="color: #66B2FF;font-weight:bold">feature</span> branch. Make sure the <span style="color: #FFB366;font-weight:bold">develop</span> branch is checked out.
 
       ```cli
@@ -175,6 +175,6 @@ If the core team is unable to champion an issue, they will mark it with a "help 
 - [Working With Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
 - [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6)
 - [Discord Server](https://discord.gg/qewu6fNgv7)
-- [Main Branching Docs](./Documentation/Branching.md)
+- [Main Branching Docs](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md)
 - [Draft Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)
 - [GIT](https://git-scm.com/)
