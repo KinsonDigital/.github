@@ -134,6 +134,6 @@ Where a developer's work will be performed when implementing changes for a <span
       <span style="font-weight:bold">Branching Diagram</span>
    </div>
 
-  ![BranchingDiagram](./BranchingDiagram-DarkMode-v1.1.png#gh-dark-mode-only)
-  ![BranchingDiagram](./BranchingDiagram-LightMode-v1.1.png#gh-light-mode-only)
+  ![BranchingDiagram](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingDiagram-DarkMode-v1.1.png)
+  ![BranchingDiagram](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingDiagram-LightMode-v1.1.png)
 </h2>
