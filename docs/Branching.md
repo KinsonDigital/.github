@@ -137,9 +137,3 @@ Where a developer's work will be performed when implementing changes for a <span
   ![BranchingDiagram](./BranchingDiagram-DarkMode-v1.1.png#gh-dark-mode-only)
   ![BranchingDiagram](./BranchingDiagram-LightMode-v1.1.png#gh-light-mode-only)
 </h2>
-
-<div align="right">
-
-   [< Linux Dev Env Setup](./EnvironmentSetup/LinuxDevEnvSetup.md)
-   <br/>
-</div>
