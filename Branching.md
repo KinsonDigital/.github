@@ -1,6 +1,6 @@
 <h1 align="center">Branching</h1>
 
-This project uses a more complicated branching model, but it gives you more control of the SDLC (Software Development Life Cycle).  This branching model allows a clear purpose for adding features, bug fixes, preview releases, QA releases, and standard releases.
+This project uses a more complicated branching model, but gives you more control of the SDLC (Software Development Life Cycle).  It illustrates a clear purpose for adding features, bug fixes, preview releases, QA releases, and standard releases.
 
 As a standard contributor, all you have to worry about is creating <span style="color: #66B2FF;font-weight:bold">feature</span> branches and creating pull requests to merge those branches into the <span style="color: #FFB366;font-weight:bold">develop</span> branch.  The rest is taken care of by a solid CI/CD system as well as the maintainers of the project.  Only the organization owner and designated team members will manage the release process.  So, contributing is very easy!!🥳
 
@@ -22,7 +22,7 @@ Long living branch that represents stable production versions:
 - **Environment:** Production
 - **Required Casing:** all lowercase
 - **CI/CD:**
-  - Upon pull request completion, the <span style="color: #00CCCC;font-weight:bold">release</span> branches are merged into the <span style="color: #82B366;font-weight:bold">master</span> branch and are automatically built, tested, and released to production as a nuget package.
+  - Upon pull request completion, the <span style="color: #00CCCC;font-weight:bold">release</span> branches are merged into the <span style="color: #82B366;font-weight:bold">master</span> branch and are automatically built, tested, and released to production as a NuGet package.
   - The testing application is attached as an artifact to the <span style="color: #00CCCC;font-weight:bold">release</span> branch for the purpose of testing.
 
 
