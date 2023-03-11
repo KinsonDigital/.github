@@ -75,7 +75,7 @@ body:
       | Bug Fixes           | `🐛bug` |
       | Breaking Changes    | `🧨breaking changes` |
       | New Feature         | `✨new feature` |
-      | Workflow Changes    | `workflow` |
+      | CICD Changes        | `♻️cicd` |
       | Code Doc Changes    | `🗒️documentation/code` |
       | Product Doc Changes | `📝documentation/product` |
       </details>
