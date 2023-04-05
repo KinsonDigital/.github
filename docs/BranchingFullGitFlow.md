@@ -1,10 +1,8 @@
 <h1 align="center">Branching</h1>
 
-This project uses a more complicated branching model, but gives you more control of the SDLC (Software Development Life Cycle).  It illustrates a clear purpose for adding features, bug fixes, preview releases, QA releases, and standard releases.
+This project uses a more complicated branching model but gives you more control of the SDLC (Software Development Life Cycle).  It illustrates a clear purpose for adding features, bug fixes, preview releases, QA releases, and standard releases.
 
 As a standard contributor, all you have to worry about is creating <span style="color: #66B2FF;font-weight:bold">feature</span> branches and creating pull requests to merge those branches into the <span style="color: #FFB366;font-weight:bold">develop</span> branch.  The rest is taken care of by a solid CI/CD system as well as the maintainers of the project.  Only the organization owner and designated team members will manage the release process.  So, contributing is very easy!!🥳
-
-**_NOTE_:** As you know, everything in software is subject to change, including the branching model.  If too many issues or complications occur with the current branching model and/or release process, it will be changed accordingly.
 
 ---
 
@@ -13,7 +11,7 @@ As a standard contributor, all you have to worry about is creating <span style="
 
 <h3 align="left" style="color: #82B366;font-weight:bold">Master Branch</h3>
 
-Long living branch that represents stable production versions:
+A long-living branch that represents stable production versions:
 - **Branch Syntax:** master
 - **Branches That Can Merge Into Master:**
   - <span style="color: #00CCCC;font-weight:bold">Release</span> branches via pull request
@@ -22,13 +20,11 @@ Long living branch that represents stable production versions:
 - **Environment:** Production
 - **Required Casing:** all lowercase
 - **CI/CD:**
-  - Upon pull request completion, the <span style="color: #00CCCC;font-weight:bold">release</span> branches are merged into the <span style="color: #82B366;font-weight:bold">master</span> branch and are automatically built, tested, and released to production as a NuGet package.
-  - The testing application is attached as an artifact to the <span style="color: #00CCCC;font-weight:bold">release</span> branch for the purpose of testing.
-
+  - Upon pull request completion, the <span style="color: #00CCCC;font-weight:bold">release</span> branches are merged into the <span style="color: #82B366;font-weight:bold">master</span> branch and are automatically built, tested, and released to production.
 
 <h3 align="left" style="color: #FFB366;font-weight:bold">Develop Branch</h3>
 
-Long living branch that represents the most current development in progress:
+A long-living branch that represents the most current development in progress:
 - **Branch Syntax:** develop
 - **Branches That Can Merge Into Develop Branch:**
   - <span style="color: #66B2FF;font-weight:bold">Feature</span> branches via pull requests
@@ -38,12 +34,12 @@ Long living branch that represents the most current development in progress:
 - **Required Casing:** all lowercase
 - **CI/CD:**
   - Automatically built, tested, and deployed as a QA release upon pull request completion.
-  - The testing application is attached as an artifact to the QA release for the purpose of testing.
+  - The testing application is attached as an artifact to the QA release for testing.
    
 
 <h3 align="left" style="color: #66B2FF;font-weight:bold">Feature Branches</h3>
 
-Short living branch where a developer's work will be performed and merged back into the <span style="color: #FFB366;font-weight:bold">develop</span> branch via a pull request:
+A short-living branch where a developer's work will be performed and merged back into the <span style="color: #FFB366;font-weight:bold">develop</span> branch via a pull request:
 - **Branch Syntax:** feature/\<issue id\>-\<description\>
   - Example: feature/123-my-branch
 - **Branches That Can Merge Into Feature Branches:** None
@@ -57,10 +53,9 @@ Short living branch where a developer's work will be performed and merged back i
 
 
 <h3 align="left" style="color: #B84949;font-weight:bold">Hotfix Branches</h3>
+The short-living branch where urgent bug fixes or changes will be performed:
 
-Short living branch where urgent bug fixes or changes will be performed:
-
-**_NOTE_:** Hotfix branches should be carefully reviewed and only used when the software is considered **broken** and/or **unusable**.  Changes to this branch should be absolutely minimal and merged directly into the <span style="color: #82B366;font-weight:bold">master</span> branch via a pull request.
+**_NOTE_:** Hotfix branches should be carefully reviewed and only used when the software is considered **broken** and/or **unusable**.  Changes to this branch should be minimal and merged directly into the <span style="color: #82B366;font-weight:bold">master</span> branch via a pull request.
 - **Branch Syntax:** hotfix/\<issue id\>-\<description\>
   - Example: hotfix/123-my-hotfix
 - **Branches That Can Merge Into Hotfix Branches:** none
