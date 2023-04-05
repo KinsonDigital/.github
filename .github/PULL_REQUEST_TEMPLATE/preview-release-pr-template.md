@@ -35,7 +35,7 @@
     ```
   </details>
 
-💡For more information on branching, refer to the project's [branching documentation](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md).
+💡For more information on branching, refer to the project's [branching documentation](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingFullGitFlow.md).
 
 - [ ] Associated issue exists and is linked to this pull request.
   - One issue per pull request.
