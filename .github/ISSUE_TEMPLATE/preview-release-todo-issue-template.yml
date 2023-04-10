@@ -31,6 +31,8 @@ body:
     - label: The NuGet package has been successfully deployed to [nuget.org](https://www.nuget.org/) _(if applicable)_.
     - label: Announcement of release on [Twitter](https://twitter.com/KDCoder) verified _(if applicable)_. _(Announcement should be performed automatically with the release)_.
     - label: Announcement has been pushed to the [Discord](https://discord.gg/qewu6fNgv7) channel _(if applicable)_.
+    - label: Documentation website released with updated or added tutorials. _(if applicable)_
+    - label: Documentation website released with updated API changes. _(if applicable)_
 
 - type: textarea
   attributes:
