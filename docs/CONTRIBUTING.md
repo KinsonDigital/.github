@@ -1,14 +1,16 @@
 <h1 style="border:0;font-weight:bold" align="center">Contribution Guide</h1>
 
-Hello!!  Thanks for your interest in contributing to our project!!  Any help you can provide is greatly appreciated.  We are always looking for ways to make the contribution process as simple and as straightforward as possible. In addition, we want to make sure that the required workflow and development processes are followed in order to maintain high software quality. If you have any ideas and/or comments on how to simplify the process for outside contributors, please don't hesitate to contact one of the project maintainers.
+Welcome, and thank you for considering contributing to our projects! We appreciate any help you can provide and are constantly looking for ways to make the contribution process as simple and straightforward as possible. Our top priority is maintaining high software quality, and we rely on the input of talented outside contributors like you to achieve that goal.
 
-You can contribute to our projects with issues and PRs. Creating GitHub issues for problems you encounter and code contribution are other ways to help out and are greatly appreciated!
+If you have any ideas or comments on how we can improve the process, please don't hesitate to reach out to one of our project maintainers. We value your input and would love to hear from you.
 
-When contributing with an issue, please only use the issues with the description that says _**(Outside contributors only)**_.  The rest of the issues are used by project maintainers.  
+There are several ways you can contribute to our projects, including creating GitHub issues for any problems you encounter, submitting code contributions, and more. To ensure your contributions are properly directed, please only use the issues marked with the description _**(Outside contributors only)**_. Our project maintainers will handle the rest.
+
+Thank you again for your interest in contributing to our projects, and we look forward to working with you!
 
 **Considerations:**
 
-Only the **KinsonDigital** team will merge changes that improve the library significantly. We will not merge changes that have narrowly-defined benefits or are breaking in any way. All contributions must also follow all other guidelines outlined in this document.
+Only the **KinsonDigital** team will merge changes that improve the library significantly. We will not merge changes that have narrowly-defined benefits or contain breaking changes in any way. All contributions must also follow all other guidelines outlined in this document.
 
 <h2 style="border:0;font-weight:bold" align="center">DO's and DON'Ts</h2>
 
@@ -49,11 +51,9 @@ The projects in the KinsonDigital organization have different branching models. 
 
 ---
 
-Our projects follow a strict naming policy. The purpose is for clarity and consistency, and it helps bind the information between GIT and GitHub. It also allows our CI/CD system to perform its job by validating issues and PRs using status checks.
+We take pride in maintaining a clear and consistent branch naming policy that helps us efficiently manage our codebase. By doing so, it makes it easy for our CI/CD system to validate issues and pull requests, ensuring a seamless workflow.
 
-Please make sure that you take the time and verify that the branch name is correct.  Branch names must be all lower case and the issue number in the branch name must be a valid GitHub issue number.  If the branch naming syntax, casing, or issue number is incorrect, the status checks for the CI/CD system will detect this and prevent the PR from being merged.
-
-Of course, we are all human and people make mistakes!!  This is ok and no harm is done.  If you do accidentally create a PR with a head(source) branch name that is incorrect, tag a maintainer in the PR about the mistake and recreate the PR.  If for some reason you used the incorrect base(target) branch, the PR does not have to be recreated.  You should be able to edit the the base(target) branch because you are the author of the PR.
+We kindly ask that you take a moment to review your branch names before submitting a PR. To ensure proper integration with our GitHub repository, branch names should be in all lowercase and contain a valid issue number. Don't worry if you make a mistake; we're all human! Simply tag a maintainer in your PR, and we'll help you correct any errors.
 
 <h2 style="border:0;font-weight:bold" align="center">Creating Contribution Branches</h2>
 
@@ -64,7 +64,8 @@ Of course, we are all human and people make mistakes!!  This is ok and no harm i
 
 Refer to the **DO's and DON'Ts** section for details about PRs.
 
-We encourage and use [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6). Please don't wait until you're finished with your work before creating a PR!  Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/EarlyPullrequests.md) to learn how to create an early pull request.
+We encourage and use [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6). Please don't wait until you're finished with your work before creating a PR!  
+Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/EarlyPullrequests.md) to learn how to create an early pull request.
 
 
 <h2 style="border:0;font-weight:bold" align="center">"Help wanted" & "Good first issue"</h2>
@@ -77,7 +78,7 @@ If the core team is unable to champion an issue, they will mark it with a "help 
 - [Forking a Repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 - [Working With Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
 - [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6)
-- [Discord Server](https://discord.gg/qewu6fNgv7)
 - [Main Branching Docs](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md)
 - [Draft Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)
 - [GIT](https://git-scm.com/)
+- [Discord Server](https://discord.gg/qewu6fNgv7)
