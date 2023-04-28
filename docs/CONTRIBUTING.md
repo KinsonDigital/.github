@@ -23,7 +23,7 @@ Only the **KinsonDigital** team will merge changes that improve the library sign
 - **DON'T** start working on a PR until you get confirmation from a project maintainer and the issue is assigned to you.  We do not want to waste your time on an issue that you are not allowed to work on.
 - **DON'T** make PRs that don't directly affect the end user, such as style changes. These are best done as part of a PR related to the area in question. Documentation is fine (and encouraged!), as is useful to the end user.
 - **DO** follow [branch naming requirements and practices](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md).
-- **DO** create PRs with the title and matching **EXACTLY** to the associated issue's title.  PRs with mismatching titles will not pass status checks and cannot be merged.
+- **DO** create PRs with the title that matches **EXACTLY** to the associated issue's title.  PRs with mismatching titles will not pass status checks and cannot be merged.
 - **DO** use [pull request templates](https://github.com/KinsonDigital/.github/tree/master/.github/PULL_REQUEST_TEMPLATE) when creating PRs.  Pull requests without a PR template will not be merged.
 - **DO** use [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6).
 - **DON'T** commit code you didn't write without following its own license and without following our guidelines in the Contributor License Agreement. If you are unable to license code, don't commit it.
@@ -36,7 +36,16 @@ Contributions must maintain API signature and behavioral compatibility. Contribu
 
 <h2 style="border:0;font-weight:bold" align="center">Branching</h2>
 
-Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md) for more information on <span style="color: #66B2FF;font-weight:bold">feature</span> and <span style="color: #9E269E;font-weight:bold">preview feature</span> branches.
+The projects in the KinsonDigital organization have different branching models.  Refer to the branching model list below to get pointed to the correct branching model documentation for that branching model.
+
+1. [Branching Model 1]()
+   > **Note** This is the most complicated branching model used with some of the projects.  This gives projects such as [Velaptor](https://github.com/KinsonDigital/Velaptor) and [CASL](https://github.com/KinsonDigital/CASL) maximum control over changes and CICD to make sure that breaking changes do not end up in production.  This branch is like GitFlow but has the ability to deal with preview releases.
+2. [GitHubFlow](https://raw.githubusercontent.com/KinsonDigital/.github/master/docs/BranchingFeatureToMaster.md)
+   > **Note** This is the simplest branching model.  The projects that use this model is the [Velaptor Documentation](https://github.com/KinsonDigital/VelaptorDocs) website and all of the GitHub actions.
+
+---
+
+Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingFullGitFlow.md) for more information on <span style="color: #66B2FF;font-weight:bold">feature</span> and <span style="color: #9E269E;font-weight:bold">preview feature</span> branches.
 
 The branching model for the project is more complicated than most OS projects but as an outside contributor, you only have to worry about 2 types of branches!
 
