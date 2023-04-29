@@ -10,7 +10,7 @@
 4. Create a [**draft pull request**](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests). Do this **BEFORE** you start working.
    > **Note**
    Please make sure that the title of the PR _**EXACTLY**_ matches the title of the associated issue.
-   > - Use one of the PR templates below depending on if you are doing a regular feature or a preview feature.
+   > - Use one of the PR templates below depending on whether if you are doing a regular feature or a preview feature.
      >   - [Feature PR Template](https://raw.githubusercontent.com/KinsonDigital/.github/master/.github/PULL_REQUEST_TEMPLATE/feature-pr-template.md)
      >    - [Preview Feature PR Template](https://raw.githubusercontent.com/KinsonDigital/.github/master/.github/PULL_REQUEST_TEMPLATE/preview-feature-pr-template.md)
 5. Make your commits in small, incremental steps with clear descriptions.
