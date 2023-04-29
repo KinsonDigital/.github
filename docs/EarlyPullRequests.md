@@ -11,8 +11,13 @@
    > **Note**
    Please make sure that the title of the PR _**EXACTLY**_ matches the title of the associated issue.
    > - Use one of the PR templates below depending on whether if you are doing a regular feature or a preview feature.
-     >   - [Feature PR Template](https://raw.githubusercontent.com/KinsonDigital/.github/master/.github/PULL_REQUEST_TEMPLATE/feature-pr-template.md)
-     >    - [Preview Feature PR Template](https://raw.githubusercontent.com/KinsonDigital/.github/master/.github/PULL_REQUEST_TEMPLATE/preview-feature-pr-template.md)
+
+   Use the PR templates based on the branching model you are using:
+    - Branching Model 1
+      - [Feature PR Template - Regular Features](https://raw.githubusercontent.com/KinsonDigital/.github/master/.github/PULL_REQUEST_TEMPLATE/feature-pr-template.md)
+      - [Preview Feature PR Template - Preview Features](https://raw.githubusercontent.com/KinsonDigital/.github/master/.github/PULL_REQUEST_TEMPLATE/preview-feature-pr-template.md)
+    - Branching Model 1
+      - [Feature To Prod PR Template - All Features](https://raw.githubusercontent.com/KinsonDigital/.github/master/.github/PULL_REQUEST_TEMPLATE/feature-to-prod-pr-template.md)
 5. Make your commits in small, incremental steps with clear descriptions.
 6. All unit tests must pass before a PR will be completed.
 7.  Make sure that the code follows the coding standards.

@@ -16,7 +16,7 @@ Only the **KinsonDigital** team will merge changes that improve the library sign
 
 **Please:**
 
-- **DO** follow the [code of conduct](https://github.com/KinsonDigital/.github/docs/code_of_conduct.md) on GitHub.
+- **DO** follow the [code of conduct](https://github.com/KinsonDigital/.github/blob/master/docs/code_of_conduct.md) on GitHub.
 - **DO** follow the `📃rules` on [Discord](https://discord.gg/qewu6fNgv7).
 - **DO** talk to us on our [Discord](https://discord.gg/qewu6fNgv7) server.
 - **DO** keep issue discussions around contributions focused.
@@ -58,14 +58,14 @@ We kindly ask that you take a moment to review your branch names before submitti
 <h2 style="border:0;font-weight:bold" align="center">Creating Contribution Branches</h2>
 
 * Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/CreatingModel1Branches.md) to follow instructions on how to create a contribution branch for projects that follow [Branching Model 1](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingModel1.md)
-* Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/CreatingModel1Branches.md) to follow instructions on how to create a contribution branch for projects that follow [Branching Model 2](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingModel2.md)
+* Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/CreatingModel2Branches.md) to follow instructions on how to create a contribution branch for projects that follow [Branching Model 2](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingModel2.md)
 
 <h2 style="border:0;font-weight:bold" align="center">Creating Early Pull Requests</h2>
 
 Refer to the **DO's and DON'Ts** section for details about PRs.
 
 We encourage and use [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6). Please don't wait until you're finished with your work before creating a PR!  
-Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/EarlyPullrequests.md) to learn how to create an early pull request.
+Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/EarlyPullRequests.md) to learn how to create an early pull request.
 
 
 <h2 style="border:0;font-weight:bold" align="center">"Help wanted" & "Good first issue"</h2>
@@ -78,7 +78,6 @@ If the core team is unable to champion an issue, they will mark it with a "help 
 - [Forking a Repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 - [Working With Forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
 - [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6)
-- [Main Branching Docs](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md)
 - [Draft Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests)
 - [GIT](https://git-scm.com/)
 - [Discord Server](https://discord.gg/qewu6fNgv7)
