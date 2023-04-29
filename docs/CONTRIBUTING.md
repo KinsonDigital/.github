@@ -1,6 +1,6 @@
 <h1 style="border:0;font-weight:bold" align="center">Contribution Guide</h1>
 
-Welcome, and thank you for considering contributing to our projects! We appreciate any help you can provide and are constantly looking for ways to make the contribution process as simple and straightforward as possible. Our top priority is maintaining high software quality, and we rely on the input of talented outside contributors like you to achieve that goal.
+Welcome, and thank you for considering contributing to our projects! We appreciate any help you can provide and are constantly looking for ways to make the contribution process as simple as possible. Our top priority is maintaining high software quality, and we rely on the input of talented outside contributors like you to achieve that goal.
 
 If you have any ideas or comments on how we can improve the process, please don't hesitate to reach out to one of our project maintainers. We value your input and would love to hear from you.
 
@@ -20,25 +20,25 @@ Only the **KinsonDigital** team will merge changes that improve the library sign
 - **DO** follow the `📃rules` on [Discord](https://discord.gg/qewu6fNgv7).
 - **DO** talk to us on our [Discord](https://discord.gg/qewu6fNgv7) server.
 - **DO** keep issue discussions around contributions focused.
-- **DO** use the comment sections in the issues and pull requests (PRs) that are relevant to said issues and PRs.  This not only keeps conversations contained in the issues and PRs, it sends notifications to the project maintainers, and shows the conversation to the community/public.
-- **DO** leave a comment in the issue that you are interested in to let the project maintainers know that you would like to work on the issue.
+- **DO** use the comment sections in the issues and pull requests (PRs) that are relevant to said issues and PRs.  This not only keeps conversations contained in the issues and PRs, but it also sends notifications to the project maintainers and shows the conversation to the community/public.
+- **DO** leave a comment on the issue that you are interested in to let the project maintainers know that you would like to work on the issue.
 - **DON'T** start working on a PR until you get confirmation from a project maintainer and the issue is assigned to you.  We do not want to waste your time on an issue that you are not allowed to work on.
 - **DON'T** make PRs that don't directly affect the end user, such as style changes. These are best done as part of a PR related to the area in question. Documentation is fine (and encouraged!), as is useful to the end user.
 - **DO** follow [branch naming requirements and practices](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md).
-- **DO** create PRs with the title that matches **EXACTLY** to the associated issue's title.  PRs with mismatching titles will not pass status checks and cannot be merged.
+- **DO** create PRs with the title that matches **EXACTLY** the associated issue's title.  PRs with mismatching titles will not pass status checks and cannot be merged.
 - **DO** use [pull request templates](https://github.com/KinsonDigital/.github/tree/master/.github/PULL_REQUEST_TEMPLATE) when creating PRs.  Pull requests without a PR template will not be merged.
 - **DO** use [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6).
-- **DON'T** commit code you didn't write without following its own license and without following our guidelines in the Contributor License Agreement. If you are unable to license code, don't commit it.
+- **DON'T** commit code you didn't write without following its license and without following our guidelines in the Contributor License Agreement. If you are unable to license the code, don't commit it.
 - **DON'T** surprise us with big PRs or big API changes without talking to us first!
 - **DON'T** make PRs for legal or administrative documents, such as the license, file headers, or code of conduct. If something is off, let us know and we will look into changing it.
 
 <h2 style="border:0;font-weight:bold" align="center">Breaking Changes</h2>
 
-Contributions must maintain API signature and behavioral compatibility. Contributions that include breaking changes MUST be discussed with project maintainers first. Breaking changes are subject to the team's approval. At risk of sounding like a broken record, talk to us about your idea first!
+Contributions must maintain API signature and behavioral compatibility. Contributions that include breaking changes MUST be discussed with project maintainers first. Breaking changes are subject to the team's approval. At the risk of sounding like a broken record, talk to us about your idea first!
 
 <h2 style="border:0;font-weight:bold" align="center">Setting Things Up</h2>
 
-For first-time contributors, you need to fork the repository so you can contribute.  There are a few steps that you will need to go through to start contributing.  Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/HowToFork.md) to follow the steps on forking the repository.  There are lot's of resources on the web on what forking is and how to do this.
+For first-time contributors, you need to fork the repository so you can contribute.  There are a few steps that you will need to go through to start contributing.  Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/HowToFork.md) to follow the steps on forking the repository.  There are lots of resources on the web on what forking is and how to do this.
 
 <h2 style="border:0;font-weight:bold" align="center">Branching</h2>
 
@@ -70,7 +70,7 @@ Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/EarlyPullreq
 
 <h2 style="border:0;font-weight:bold" align="center">"Help wanted" & "Good first issue"</h2>
 
-If the core team is unable to champion an issue, they will mark it with a "help wanted" label. This indicates that any external contributor may pick it up and implement it as part of a contribution. However, some **"help wanted"** issues may require intermediate knowledge of the codebase, area, and/or ecosystem; or may have uncertainty surrounding implementation details.  If this is the case, talk to us in [Discord](https://discord.gg/qewu6fNgv7) or in the issue's discussion. We also mark some issues with the label **"good first issue"** which indicates that an issue is straightforward and is a good place to start if you're interested in contributing but are new to the codebase.
+If the core team is unable to champion an issue, they will mark it with a "help wanted" label. This indicates that any external contributor may pick it up and implement it as part of a contribution. However, some **"help wanted"** issues may require intermediate knowledge of the codebase, area, and/or ecosystem; or may have uncertainty surrounding implementation details.  If this is the case, talk to us in [Discord](https://discord.gg/qewu6fNgv7) or the issue's discussion. We also mark some issues with the label **"good first issue"** which indicates that an issue is straightforward and is a good place to start if you're interested in contributing but are new to the codebase.
 
 
 <h3 style="border:0;font-weight:bold" align="left">Resources</h3>
