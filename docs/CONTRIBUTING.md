@@ -24,10 +24,10 @@ Only the **KinsonDigital** team will merge changes that improve the library sign
 - **DO** leave a comment on the issue that you are interested in to let the project maintainers know that you would like to work on the issue.
 - **DON'T** start working on a PR until you get confirmation from a project maintainer and the issue is assigned to you.  We do not want to waste your time on an issue that you are not allowed to work on.
 - **DON'T** make PRs that don't directly affect the end user, such as style changes. These are best done as part of a PR related to the area in question. Documentation is fine (and encouraged!), as is useful to the end user.
-- **DO** follow [branch naming requirements and practices](https://github.com/KinsonDigital/.github/blob/master/docs/Branching.md).
+- **DO** follow branch naming requirements and practices based on the branching model used for a project.
 - **DO** create PRs with the title that matches **EXACTLY** the associated issue's title.  PRs with mismatching titles will not pass status checks and cannot be merged.
 - **DO** use [pull request templates](https://github.com/KinsonDigital/.github/tree/master/.github/PULL_REQUEST_TEMPLATE) when creating PRs.  Pull requests without a PR template will not be merged.
-- **DO** use [Early Pull Requests](https://medium.com/practical-blend/pull-request-first-f6bb667a9b6).
+- **DO** use early pull requests. (More info below)
 - **DON'T** commit code you didn't write without following its license and without following our guidelines in the Contributor License Agreement. If you are unable to license the code, don't commit it.
 - **DON'T** surprise us with big PRs or big API changes without talking to us first!
 - **DON'T** make PRs for legal or administrative documents, such as the license, file headers, or code of conduct. If something is off, let us know and we will look into changing it.
@@ -42,12 +42,12 @@ For first-time contributors, you need to fork the repository so you can contribu
 
 <h2 style="border:0;font-weight:bold" align="center">Branching</h2>
 
-The projects in the KinsonDigital organization have different branching models.  Refer to the branching model list below to get pointed to the correct branching model documentation for that branching model.
+The projects in the KinsonDigital organization have different branching models.  Refer to the different branching models used below to get pointed to the correct branching model documentation for that branching model.  Go [here](https://github.com/KinsonDigital/.github/blob/master/docs/ProjectBranchingModelList.md) for a list of the branching models used for the KinsonDigital organization projects.
 
 1. [Branching Model 1](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingModel1.md)
-   > **Note** This is the most complicated branching model used with some of the projects.  This gives projects such as [Velaptor](https://github.com/KinsonDigital/Velaptor) and [CASL](https://github.com/KinsonDigital/CASL) maximum control over changes and CICD to make sure that breaking changes do not end up in production.  This branch is like GitFlow but with the added ability to deal with preview releases.
+   > **Note** This is the most complicated branching model used with some of the projects.  This gives projects maximum control over changes and CICD to make sure that breaking changes do not end up in production.  This branch is similar to GitFlow but with the added ability to deal with preview releases.
 2. [Branching Model 2](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingModel2.md)
-   > **Note** This is the simplest branching model.  The projects that use this model is the [Velaptor Documentation](https://github.com/KinsonDigital/VelaptorDocs) website and all of the GitHub actions.
+   > **Note** This is the simplest branching model.  This makes it easier to to contribute to with a sacrifice in maximum control.  This is used more for projects are are more UI oriented with no public facing API to worry about.
 
 ---
 
