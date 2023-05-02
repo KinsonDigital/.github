@@ -6,5 +6,6 @@
         "Kinson",
         "Partithyst",
         "Velaptor"
-    ]
+    ],
+    "deno.enable": true
 }
