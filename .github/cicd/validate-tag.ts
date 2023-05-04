@@ -1,7 +1,7 @@
 // Validate the arguments
 if (Deno.args.length !== 3) {
     let errorMsg = "The 'validate-tag' cicd script must have two arguments.";
-    errorMsg += "\nThe first arg must be either 'production' or 'preview'.";
+    errorMsg += "\nThe first arg must be either 'production', 'preview' or 'either'.";
     errorMsg += "\nThe second arg must be the name of the tag.";
 
     throw new Error(errorMsg);
@@ -9,8 +9,8 @@ if (Deno.args.length !== 3) {
 
 const tagType: string = Deno.args[0].toLowerCase();
 
-if (tagType !== "production" && tagType !== "preview") {
-    let errorMsg = "The tag type argument must be a value of 'production' or 'preview'.";
+if (tagType !== "production" && tagType !== "preview" && tagType !== "either") {
+    let errorMsg = "The tag type argument must be a value of 'production', 'preview' or 'either'.";
     errorMsg += "\nThe value is case-insensitive.";
 
     throw new Error(errorMsg);
@@ -29,10 +29,18 @@ tag = tag.startsWith("v")
 
 let isValid = false;
 
-if (tagType === "production") {
-    isValid = prodVersionRegex.test(tag);
-} else {
-    isValid = prevVersionRegex.test(tag);
+switch (tagType) {
+    case "production":
+        isValid = prodVersionRegex.test(tag);
+        break;
+    case "preview":
+        isValid = prevVersionRegex.test(tag);
+        break;
+    case "either":
+        isValid = prodVersionRegex.test(tag) || prevVersionRegex.test(tag);
+        break;
+    default:
+        break;
 }
 
 if (isValid === false) {
