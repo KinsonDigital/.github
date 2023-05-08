@@ -8,6 +8,14 @@ if (Deno.args.length !== 3) {
 }
 
 const tagType: string = Deno.args[0].toLowerCase();
+const tag: string = Deno.args[1].startsWith("v") ? Deno.args[1] : `v${Deno.args[1]}`;
+const projectName: string = Deno.args[2];
+
+console.log("::group::Argument Values")
+console.log(`Tag Type: ${tagType}`);
+console.log(`Tag: ${tag}`);
+console.log(`Project Name: ${projectName}`);
+console.log("::endgroup::");
 
 if (tagType !== "production" && tagType !== "preview" && tagType !== "either") {
     let errorMsg = "The tag type argument must be a value of 'production', 'preview' or 'either'.";
@@ -16,16 +24,8 @@ if (tagType !== "production" && tagType !== "preview" && tagType !== "either") {
     throw new Error(errorMsg);
 }
 
-const projectName: string = Deno.args[2];
-
 const prodVersionRegex = /^v[0-9]+\.[0-9]+\.[0-9]+$/;
 const prevVersionRegex = /^v[0-9]+\.[0-9]+\.[0-9]+-preview\.[0-9]+$/;
-
-let tag: string = Deno.args[1];
-
-tag = tag.startsWith("v")
-    ? tag
-    : `v${tag}`;
 
 let isValid = false;
 
@@ -33,7 +33,7 @@ switch (tagType) {
     case "production":
         isValid = prodVersionRegex.test(tag);
         break;
-    case "preview":
+        case "preview":
         isValid = prevVersionRegex.test(tag);
         break;
     case "either":
@@ -42,11 +42,15 @@ switch (tagType) {
     default:
         break;
 }
-
+        
 if (isValid === false) {
-    throw new Error(`The tag is not in the correct ${tagType} version syntax.`);
+    const tagTypeStr = tagType === "production" || tagType === "preview"
+    ? tagType
+    : "production or preview";
+    
+    throw new Error(`The tag is not in the correct ${tagTypeStr} version syntax.`);
 }
-
+        
 const tagsUrl = `https://api.github.com/repos/KinsonDigital/${projectName}/tags`;
 const response = await fetch(tagsUrl);
 const responseData = <{ name: ""}[]>await response.json();
