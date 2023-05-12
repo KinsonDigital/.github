@@ -6,6 +6,5 @@
     "enabled": true,
     "addLabels": ["dependency update"],
     "reviewers": ["KinsonDigitalAdmin"],
-    "commitBodyTable": true,
-    "baseBranches": ["develop"]
+    "commitBodyTable": true
 }
