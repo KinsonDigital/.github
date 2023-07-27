@@ -4,7 +4,7 @@
       "config:base"
     ],
     "enabled": true,
-    "addLabels": ["dependency update"],
+    "addLabels": ["📦dependency update"],
     "reviewers": ["KinsonDigitalAdmin"],
     "commitBodyTable": true
 }
