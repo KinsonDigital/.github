@@ -1,7 +1,7 @@
 <div align="center">
     
-![logo](https://raw.githubusercontent.com/KinsonDigital/.github/master/Images/kinson-digital-logo-light-mode.gif#gh-light-mode-only)
-![logo](https://raw.githubusercontent.com/KinsonDigital/.github/master/Images/kinson-digital-logo-dark-mode.gif#gh-dark-mode-only)
+![logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/kinson-digital-logo-light-mode.gif#gh-light-mode-only)
+![logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/kinson-digital-logo-dark-mode.gif#gh-dark-mode-only)
 </div>
 
 <div align="center">
@@ -20,6 +20,8 @@ It is our mission to create high-quality game development and CICD-related tools
 
 ### **Community:**
 
-- [![discord-logo](https://raw.githubusercontent.com/KinsonDigital/.github/master/Images/discord.svg)](https://discord.gg/qewu6fNgv7) The best place to come hang out, learn how to contribute, and chat!!
-- [![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/master/Images/twitter-logo-16x16.svg)](https://twitter.com/KDCoder) Calvin Wilkinson - Organization Owner / Maintainer  
-- [![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/master/Images/twitter-logo-16x16.svg)](https://twitter.com/kswilky) Kristen Wilkinson - Documentation Maintainer / Project Management
+- [![discord-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/discord.svg)](https://discord.gg/qewu6fNgv7) The best place to come hang out, learn how to contribute, and chat!!
+- ![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-dark-mode.svg#gh-dark-mode-only)
+![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-light-mode.svg#gh-light-mode-only)[Calvin Wilkinson](https://x.com/KDCoder) - Organization Owner / Maintainer
+- ![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-dark-mode.svg#gh-dark-mode-only)
+![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-light-mode.svg#gh-light-mode-only)[Kristen Wilkinson](https://x.com/kswilky) - Documentation Maintainer / Project Management

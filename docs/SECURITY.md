@@ -15,7 +15,7 @@ When reporting issues, please provide the following information:
 
 We request that you contact us via the email address above and give the
 project contributors a chance to resolve the vulnerability and issue a new release before
-any public exposure. This is to help protect the project's users, and provides
+any public exposure. This is to help protect the project's users and provides
 them with a chance to upgrade and/or update to protect their applications and systems.
 
 ## Policy
@@ -31,4 +31,4 @@ If we verify a reported security vulnerability, our policy is:
   vulnerability, as well as recommendations for end-users to protect themselves.
   Security advisories will be posted in all release notes as well as any notification
   systems related to the project such as [discord](https://discord.gg/qewu6fNgv7) and
-  [twitter](https://twitter.com/KDCoder).
+  [X](https://x.com/KDCoder).

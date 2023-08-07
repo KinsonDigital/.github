@@ -1,6 +1,7 @@
 name: 🚀 Preview Release To Do List
 description: Used to perform a release (Project maintainers only).
 title: "🚀Preview Release"
+labels: [🚀Preview Release]
 body:
 
 - type: checkboxes
@@ -8,17 +9,17 @@ body:
     label: Pre-Release ToDo List
     description: Complete the following items to perform a release.
     options:
-    - label: All issues in the assigned milestone are closed and all issue tasks are complete.
-    - label: Add `🚀Preview Release` label to this issue.
-    - label: Issue is assigned to a project.
-    - label: Issue is assigned to a milestone.
-    - label: Release PR linked to this issue.
-    - label: All unit tests have been executed locally and have passed. _(Check out the appropriate release branch before running tests)_.
-    - label: Version in project file updated _(All changes made directly on the release branch (preview/v#.#.#-preview.#))_.
-    - label: Release notes created and added _(All changes made directly on the release branch (preview/v#.#.#-preview.#))_.
-    - label: Manual QA Testing completed _(if applicable)_.
-    - label: Pull request has been approved and merged into a release branch before performing the release. _(Releases are performed on preview branches)_.
-    - label: Release to **_preview_** complete. _(The release is performed by running the `🚀Preview Release` workflow)_.
+    - label: All of the issues in the assigned milestone are closed and all issue tasks are complete.
+    - label: The `🚀Preview Release` label has been added to this issue.
+    - label: This issue is assigned to a project.
+    - label: This issue is assigned to a milestone.
+    - label: The release pull request is linked to this issue.
+    - label: All of the unit tests have been executed locally and have passed. _(Check out the appropriate branch before running tests)_.
+    - label: The version has been updated. _(All changes made directly on a 'prev-release' branch)_.
+    - label: The release notes have been created and added. _(All changes made directly on a 'prev-release' branch)_.
+    - label: All manual QA Testing completed. _(if applicable)_
+    - label: The pull request has been approved and merged into the _**preview**_ branch before performing the release. _(Releases are performed on the preview branch)_.
+    - label: The preview release has been completed. _(The release is performed by running the `🚀Release` workflow)_.
 
 
 # POST-RELEASE TODO LIST
@@ -28,11 +29,11 @@ body:
     description: Verify that release went smoothly.
     options:
     - label: The GitHub release has been created and is correct. 
-    - label: The NuGet package has been successfully deployed to [nuget.org](https://www.nuget.org/) _(if applicable)_.
-    - label: Announcement of release on [Twitter](https://twitter.com/KDCoder) verified _(if applicable)_. _(Announcement should be performed automatically with the release)_.
-    - label: Announcement has been pushed to the [Discord](https://discord.gg/qewu6fNgv7) channel _(if applicable)_.
-    - label: Documentation website released with updated or added tutorials. _(if applicable)_
-    - label: Documentation website released with updated API changes. _(if applicable)_
+    - label: The NuGet package has been successfully deployed to [nuget.org](https://www.nuget.org/). _(if applicable)_
+    - label: An announcement of the release on [X](https://x.com/KDCoder) has been verified. _(if applicable)_
+    - label: An announcement has been pushed to the [Discord](https://discord.gg/qewu6fNgv7) channel. _(if applicable)_
+    - label: The documentation is website released with updated or added tutorials. _(if applicable)_
+    - label: The documentation is website released with updated API changes. _(if applicable)_
 
 - type: textarea
   attributes:
@@ -60,15 +61,17 @@ body:
       <FileVersion>1.2.3-preview.4</FileVersion>
       <AssemblyVersion>1.2.3</AssemblyVersion>
       ```
+
+      Version changes should be committed to a _**prev-release**_ head branch for the the pull request linked to this issue.
       </details>
 
       ---
 
       **_<details closed><summary>Release Notes</summary>_**
 
-      By default, the release notes go into a **_ReleaseNotes_** folder inside of the **_Documentation_** folder with the **_Documentation_** folder at the root of the repository.
-      Preview release notes path: **_./Documentation/ReleaseNotes/PreviewReleases_**.
-    
+      Release notes are created automatically when running the _**🚁Prepare Release**_ workflow.  The release notes
+      should be reviewed and changed appropriately.
+
       Release note file names must follow a particular syntax and are in markdown format so they can be added to the release.
 
       #### Release Notes File Name Syntax:
@@ -76,7 +79,7 @@ body:
         - **Syntax:** Release-Notes-v#.#.#-preview.#.md
         - **Example:** Release-Notes-v1.2.3-preview.4.md
 
-      Changes such as release notes and version updates should be committed to the destination branch (preview/v#.#.#-preview.#) in the pull request attached to this issue.
+      Release note changes should be committed to a _**prev-release**_ head branch for the the pull request linked to this issue.
       </details>
 
       ---
@@ -90,7 +93,7 @@ body:
   id: terms
   attributes:
     label: Code of Conduct
-    description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/KinsonDigital/.github/blob/master/docs/CODE_OF_CONDUCT.md)
+    description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/KinsonDigital/.github/blob/main/docs/CODE_OF_CONDUCT.md)
     options:
       - label: I agree to follow this project's Code of Conduct
         required: true
