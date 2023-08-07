@@ -7,7 +7,7 @@
 
 ### **2. Clone the forked repository**
 
-When setting up the cloned fork of the repository on your machine, adding a new remote of the original project is important.  It is common practice to name the remote as `upstream`.  This remote represents the original repository that your repository was forked from.
+When setting up the cloned fork of the repository on your machine, adding a new remote of the original project is important.  It is common practice to name the new remote as `upstream`.  This remote represents the original repository that your repository was forked from.
 
 This will enable you to fetch new changes from the original repository as well as create pull requests.  Once everything is set up, you should have 2 remotes.  One with the name `origin` which is the link to the repository fork in **YOUR** account.  The other remote should be named `upstream` which is the link to the original repository your trying to contribute to.
 
