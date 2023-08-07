@@ -31,7 +31,7 @@
 - [ ] The assigned milestone matches the milestone of the associated issue.
 
 - [ ] My code follows the coding style of this project.
-  - The style is enforced by the **_.editorconfig_** files in the project and displayed as warnings.  If there is an edge case, reach out, and let's discuss it.
+  - The style is enforced by the **_.editorconfig_** files in the project and displayed as warnings.  If there is an edge case, reach out, and let us discuss it.
 
 - [ ] I have manually tested my code changes to the best of my ability.
 

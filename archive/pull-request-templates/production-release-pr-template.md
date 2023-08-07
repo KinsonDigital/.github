@@ -16,7 +16,7 @@
       ```
     </details>
 
-- [ ] The **_base(target)_** branch for this pull request is a **_production_** branch with the name of **_master_**.
+- [ ] The **_base(target)_** branch for this pull request is a **_production_** branch with the name of **_main_**.
   - A **_base(target)_** branch is the branch that the **_head(source)_** branch is merging into.
 
 - [ ] The **_head(source)_** branch for this pull request is created from a **_development_** branch with the name **_develop_**.

@@ -7,7 +7,7 @@ If you want to release something to **production**, then you create your <span s
 
 > **Note** Both branches will be merged into the same branch they were created from, via a pull request.
 
-Whatever method you want to use for creating your branches and pull requests is up to you and your preference.  But below is the git commands that you could use to help contribute to any of the **KinsonDigital** projects.
+As time moves on, the original repository will change which means it is important to keep your fork up to date before you create a new branch.  There are different options to do this.  To use the GitHub web interface go [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).  To use the GIT command line, follow the steps below:
 
 
 ### **1. Sync Branch**

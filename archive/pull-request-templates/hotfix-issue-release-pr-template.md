@@ -12,10 +12,10 @@
       ```
     </details>
 
-- [ ] The **_base(target)_** branch for this pull request is a **_production_** branch with the name of **_master_**.
+- [ ] The **_base(target)_** branch for this pull request is a **_production_** branch with the name of **_main_**.
   - A **_base(target)_** branch is the branch that the **_head(source)_** branch is merging into.
 
-- [ ] The **_head(source)_** branch for this pull request is created from a **_production_** branch with the name **_master_**.
+- [ ] The **_head(source)_** branch for this pull request is created from a **_production_** branch with the name **_main_**.
 
 💡For more information on branching, refer to the project's [branching documentation](https://github.com/KinsonDigital/.github/blob/main/docs/BranchingModel.md).
 
@@ -33,7 +33,7 @@
 - [ ] Milestone assigned matches the milestone of the associated issue.
 
 - [ ] My code follows the coding style of this project.
-  - The style is enforced by the **_.editorconfig_** files in the project and displayed as warnings.  If there is an edge case, reach out, and let's discuss it.
+  - The style is enforced by the **_.editorconfig_** files in the project and displayed as warnings.  If there is an edge case, reach out, and let us discuss it.
 
 - [ ] I have manually tested my code changes to the best of my ability.
 

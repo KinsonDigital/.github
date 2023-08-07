@@ -20,7 +20,7 @@ git remote add upstream https://github.com/KinsonDigital/myproject.git
 ```
 
 ### **3. Let GIT know who you are**
-To better track changes and know who did what, it's good practice to give GIT some information about yourself.
+To better track changes and know who did what, it is good practice to give GIT some information about yourself.
 
 > **Note** Be sure to replace `johndoe` with your username, and `john.doe@example.com` with your email.
 

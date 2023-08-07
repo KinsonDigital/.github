@@ -2,7 +2,7 @@
 
 This document illustrates a clear purpose for adding features in **preview** and **production** releases.
 
-As any contributor, you only have to worry about creating <span style="color: #66B2FF;font-weight:bold">feature</span> branches from the <span style="color: #82B366;font-weight:bold">main</span> or <span style="color: #CC99FF;font-weight:bold">preview</span> branch and creating pull requests to merge those branches into the same branch that the **feature** branch was created from.  The rest is taken care of by a solid CI/CD system as well as the maintainers of the project.  Only the organization owner and designated team members will manage the release process.  So, contributing is very easy!!🥳
+As a contributor, you only create <span style="color: #66B2FF;font-weight:bold">feature</span> branches from the <span style="color: #82B366;font-weight:bold">main</span> or <span style="color: #CC99FF;font-weight:bold">preview</span> branch.  Your pull requests will merge into the same branch that the <span style="color: #66B2FF;font-weight:bold">feature</span> branch was created from.  The rest is taken care of by a solid CI/CD system as well as the maintainers of the project.  The organization owner and designated team members will manage the release process.  So, contributing is very easy!!🥳
 
 
 <h2 align="center" style="border:0">Branches Used</h2>
@@ -18,7 +18,7 @@ A long-living branch that represents stable production versions:
 - **Created from:** none
 - **Merges into:** none
 - **Required casing:** all lowercase
-- **CI/CD:** Pull requests that merge into this branch contain various status checks depending on the project and all must pass before they can be merged into this branch.
+- **CI/CD:** Pull requests that merge into this branch contain various status checks and all must pass before they can be merged into this branch.
 
 
 <h3 align="left" style="color: #CC99FF;font-weight:bold">Preview Branches</h3>
@@ -31,7 +31,7 @@ Holds minimal changes required for the stability of an upcoming **production** r
 - **Created from:** <span style="color: #82B366;font-weight:bold">main</span> branch
 - **Merged into:** <span style="color: #82B366;font-weight:bold">main</span> branch
 - **Required casing:** all lowercase
-- **CI/CD:** All status checks must pass before merging a pull request into this branch can be completed.
+- **CI/CD:** All status checks must pass before merging a pull request into this branch.
 
 
 <h3 align="left" style="color: #66B2FF;font-weight:bold">Feature Branches</h3>
