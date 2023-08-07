@@ -12,12 +12,12 @@
       ```
     </details>
 
-- [ ] The **_head(source)_** branch for this pull request is created from a **_production_** branch with the name **_master_**.
+- [ ] The **_head(source)_** branch for this pull request is created from a **_development_** branch with the name **_develop_**.
 
-- [ ] The **_base(target)_** branch for this pull request is a **_production_** branch with the name **_master_**.
+- [ ] The **_base(target)_** branch for this pull request is a **_development_** branch with the name **_develop_**.
   - A **_base(target)_** branch is the branch that the **_head(source)_** branch is merging into.
 
-💡For more information on branching, refer to the project's [branching documentation](https://github.com/KinsonDigital/.github/blob/master/docs/BranchingFeatureToMaster.md).
+💡For more information on branching, refer to the project's [branching documentation](https://github.com/KinsonDigital/.github/blob/main/docs/BranchingModel.md).
 
 - [ ] The associated issue exists and is linked to this pull request.
   - One issue per pull request.
@@ -31,10 +31,11 @@
 - [ ] The assigned milestone matches the milestone of the associated issue.
 
 - [ ] My code follows the coding style of this project.
+  - The style is enforced by the **_.editorconfig_** files in the project and displayed as warnings.  If there is an edge case, reach out, and let's discuss it.
 
 - [ ] I have manually tested my code changes to the best of my ability.
 
 - [ ] All tests passed locally.
   - This is required because unit tests might pass locally but not in the CI environment during the status check process or vice-versa.
   - Tests might pass on the developer's machine but not necessarily on the code reviewer's machine.
-  - Status checks run for this pull request when merging into the **_master_** branch.  These status checks run every time a change is pushed to the pull request.  These checks validate version syntax, tagging, builds, unit tests, and more.
+  - Status checks run for this pull request when merging into the **_develop_** branch.  These status checks run every time a change is pushed to the pull request.  These checks validate version syntax, tagging, builds, unit tests, and more.
