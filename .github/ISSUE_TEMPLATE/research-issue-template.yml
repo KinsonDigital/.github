@@ -46,7 +46,6 @@ body:
     label: ToDo Items
     options:
     - label: Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
-    - label: Issue linked to the correct project.
 
 - type: textarea
   attributes:
