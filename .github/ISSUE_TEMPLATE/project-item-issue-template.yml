@@ -74,6 +74,8 @@ body:
       | Breaking Changes    | `🧨breaking changes` |
       | New Feature         | `✨new feature` |
       | CICD Changes        | `♻️cicd` |
+      | Config Changes      | `⚙️config` |
+      | Performance Improvements | `🏎️performance` |
       | Code Doc Changes    | `🗒️documentation/code` |
       | Product Doc Changes | `📝documentation/product` |
       </details>
