@@ -2,6 +2,7 @@ name: 🚀 Preview Release To Do List
 description: Used to perform a release (Project maintainers only).
 title: "🚀Preview Release"
 labels: [🚀Preview Release]
+projects: ["KinsonDigital/11"]
 body:
 
 - type: checkboxes

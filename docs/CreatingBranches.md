@@ -32,7 +32,7 @@ As time moves on, the original repository changes.  This means that you need to 
 
 ### **2. Create a Working Branch**
 
-Create a <span style="color: #66B2FF;font-weight:bold">feature</span> branch using the syntax requirements in the _**[Branching Docs](https://github.com/KinsonDigital/.github/blob/preview/docs/BranchingModel.md)**_ and push it to the fork remote. 
+Create a <span style="color: #66B2FF;font-weight:bold">feature</span> branch using the syntax requirements in the _**[Branching Docs](https://github.com/KinsonDigital/.github/blob/main/docs/BranchingModel.md)**_ and push it to the fork remote. 
    - Make sure the <span style="color: #82B366;font-weight:bold">main</span> or <span style="color: #CC99FF;font-weight:bold">preview</span> branch is checked out when creating a <span style="color: #66B2FF;font-weight:bold">feature</span> branch. 
 
       ```cli

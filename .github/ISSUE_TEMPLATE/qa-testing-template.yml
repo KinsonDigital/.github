@@ -2,6 +2,7 @@ name: 🧪QA Testing
 description: Test functionality (Project maintainers only).
 title: "🧪QA Testing"
 labels: ["🧪qa testing"]
+projects: ["KinsonDigital/11"]
 body:
   - type: checkboxes
     attributes:
