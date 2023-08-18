@@ -43,6 +43,7 @@ body:
   attributes:
     label: Operating System(s)
     description: Which operating system(s) does the bug occur?
+    multiple: true
     options:
     - Windows
     - Linux
