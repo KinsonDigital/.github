@@ -20,7 +20,7 @@ Good bug reports make it easier for maintainers to verify the root cause of the 
 - A high-level description of the problem.
 - A minimal reproduction, i.e. the smallest size of code/configuration required to reproduce the wrong behavior.
 - A description of the expected behavior, contrasted with the actual behavior observed.
-- Information on the environment: NuGet version, .NET version, etc.
+- Information on the environment: NuGet version, .NET version, Operating System with version, browser, etc.
 - Additional information, e.g. is it a regression from previous versions? Are there any known workarounds?
 - When ready to submit a bug report, please use the projects **🐛Bug** issue template.
 
@@ -35,7 +35,7 @@ A reproduction lets maintainers verify the presence of a bug, and diagnose the i
 - The best way to create a minimal reproduction is gradually removing code and dependencies from a reproducing app until the problem no longer occurs. 
  
 **A Good Minimal Reproduction:**
-- Excludes all unnecessary types, methods, code blocks, source files, NuGet dependencies and project configurations.
+- Excludes all unnecessary types, methods, code blocks, source files, dependencies and project configurations.
 - Contains documentation or code comments illustrating expected vs actual behavior.
 - Stack Overflow has a great article about [how to create a minimal, reproducible example](https://stackoverflow.com/help/minimal-reproducible-example).
 
