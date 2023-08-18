@@ -39,17 +39,17 @@ body:
   validations:
     required: true
 
-- type: checkboxes
+- type: dropdown
   attributes:
     label: Operating System(s)
     description: Which operating system(s) does the bug occur?
     options:
-    - label: Windows
-    - label: Linux
-    - label: Android
-    - label: Mac OS
-    - label: iOS
-    - label: Other
+    - Windows
+    - Linux
+    - Android
+    - Mac OS
+    - iOS
+    - Other
   validations:
     required: true
 
