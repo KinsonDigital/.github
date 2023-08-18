@@ -6,9 +6,38 @@ There are several ways you can contribute to our projects, including creating Gi
 
 Thank you again for your interest in contributing to our projects, and we look forward to collaborating with you!
 
-**Considerations:**
+<h2 style="border:0;font-weight:bold" align="center">Considerations</h2>
 
 Only the **KinsonDigital** team will merge changes that improve the library significantly. We will not merge changes that have narrowly-defined benefits or contain breaking changes in any way without approval. All contributions must also follow all other guidelines outlined in this document.
+
+**Finding Existing Issues**
+
+Before filing a new issue, please search the project's issues to check if it already exists.  If you do find an existing issue, please include your feedback in the discussion. Instead of posting "me too", upvote the issue with 👍, as this better helps us prioritize popular issues and avoids spamming people subscribing to the issue.
+
+**Writing a Good Bug Report**
+
+Good bug reports make it easier for maintainers to verify the root cause of the underlying problem. The better a bug report, the faster the problem will be resolved. Ideally, a bug report should contain the following information:
+- A high-level description of the problem.
+- A minimal reproduction, i.e. the smallest size of code/configuration required to reproduce the wrong behavior.
+- A description of the expected behavior, contrasted with the actual behavior observed.
+- Information on the environment: NuGet version, .NET version, etc.
+- Additional information, e.g. is it a regression from previous versions? Are there any known workarounds?
+- When ready to submit a bug report, please use the projects **🐛Bug** issue template.
+
+**Why are Minimal Reproductions Important?**
+
+A reproduction lets maintainers verify the presence of a bug, and diagnose the issue using a debugger. A minimal reproduction is the smallest possible console application demonstrating that bug. Minimal reproductions are generally preferable since they:
+- Focus debugging efforts on a simple code snippet.
+- Ensure that the problem is not caused by unrelated dependencies/configurations.
+- Avoid the need to share production codebases.
+
+**How to Create a Minimal Reproduction**
+- The best way to create a minimal reproduction is gradually removing code and dependencies from a reproducing app until the problem no longer occurs. 
+ 
+**A Good Minimal Reproduction:**
+- Excludes all unnecessary types, methods, code blocks, source files, NuGet dependencies and project configurations.
+- Contains documentation or code comments illustrating expected vs actual behavior.
+- Stack Overflow has a great article about [how to create a minimal, reproducible example](https://stackoverflow.com/help/minimal-reproducible-example).
 
 <h2 style="border:0;font-weight:bold" align="center">DO's and DON'Ts</h2>
 
