@@ -25,3 +25,10 @@ It is our mission to create high-quality game development and CICD-related tools
 ![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-light-mode.svg#gh-light-mode-only)[Calvin Wilkinson](https://x.com/KDCoder) - Organization Owner / Maintainer
 - ![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-dark-mode.svg#gh-dark-mode-only)
 ![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-light-mode.svg#gh-light-mode-only)[Kristen Wilkinson](https://x.com/kswilky) - Documentation Maintainer / Project Management
+
+
+### **News/Blog**:
+
+For KinsonDigital news and blog posts, go to:
+- [News](https://kinsondigital.github.io/blog/news)
+- [Blog](https://kinsondigital.github.io/blog/)
