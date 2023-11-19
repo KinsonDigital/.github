@@ -35,9 +35,10 @@ body:
     label: Acceptance Criteria
     description: The items to complete in order to satisfy the Definition of Done.
     value: |
-      **This issue is finished when:**
+      ```[tasklist]
       - [ ] Research complete and issues created _(if needed)_.
       - [ ] If any issues were created, they have been added to the _**Related Work**_ section below.
+      ```
   validations:
     required: true
     render: markdown
