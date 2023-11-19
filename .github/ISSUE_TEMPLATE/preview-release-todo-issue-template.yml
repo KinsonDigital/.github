@@ -11,6 +11,7 @@ body:
     description: Complete the following items to perform a release.
     value: |
       ```[tasklist]
+      ### Complete the following items to perform a release.
       - [ ] All of the issues in the assigned milestone are closed and all issue tasks are complete.
       - [ ] The `🚀Preview Release` label has been added to this issue.
       - [ ] This issue is assigned to a project.
@@ -34,6 +35,7 @@ body:
     description: Verify that release went smoothly.
     value: |
       ```[tasklist]
+      ### Verify that release went smoothly.
       - [ ] The GitHub release has been created and is correct. 
       - [ ] The NuGet package has been successfully deployed to [nuget.org](https://www.nuget.org/). _(if applicable)_
       - [ ] An announcement of the release on [X](https://x.com/KDCoder) has been verified. _(if applicable)_

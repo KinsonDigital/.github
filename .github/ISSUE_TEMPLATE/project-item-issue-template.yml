@@ -23,6 +23,7 @@ body:
     description: The items to complete in order to satisfy the Definition of Done.
     value: |
       ```[tasklist]
+      ### The items to complete in order to satisfy the Definition of Done.
       ```
   validations:
     required: true

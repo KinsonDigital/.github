@@ -36,6 +36,7 @@ body:
     description: The items to complete in order to satisfy the Definition of Done.
     value: |
       ```[tasklist]
+      ### The items to complete in order to satisfy the Definition of Done.
       - [ ] Research complete and issues created _(if needed)_.
       - [ ] If any issues were created, they have been added to the _**Related Work**_ section below.
       ```
