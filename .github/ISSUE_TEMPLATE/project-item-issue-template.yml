@@ -29,14 +29,20 @@ body:
     required: true
     render: markdown
 
-- type: checkboxes
+- type: textarea
   attributes:
     label: ToDo Items
     description: Complete the following items before requesting a PR review.
-    options:
-    - label: Change type labels added to this issue.  Refer to the _**Change Type Labels**_ section below.
-    - label: Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
-    - label: Issue linked to the correct milestone _(if applicable)_.
+    value: |
+      ```[tasklist]
+      ### The items to complete in order to satisfy the Definition of Done.
+      - [ ] Change type labels added to this issue.  Refer to the _**Change Type Labels**_ section below.
+      - [ ] Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
+      - [ ] Issue linked to the correct milestone _(if applicable)_.
+      ```
+  validations:
+    required: true
+    render: markdown
 
 - type: textarea
   attributes:
