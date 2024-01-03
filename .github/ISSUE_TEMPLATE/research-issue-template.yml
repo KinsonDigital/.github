@@ -44,11 +44,17 @@ body:
     required: true
     render: markdown
 
-- type: checkboxes
+- type: textarea
   attributes:
     label: ToDo Items
-    options:
-    - label: Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
+    value: |
+      ```[tasklist]
+      ### The items to complete in order to satisfy the Definition of Done.
+      - [ ] Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
+      ```
+  validations:
+    required: true
+    render: markdown
 
 - type: textarea
   attributes:
