@@ -70,6 +70,61 @@ body:
   validations:
     required: false
 
+- type: textarea
+  attributes:
+    label: Acceptance Criteria
+    description: The items to complete to satisfy the Definition of Done.
+    value: |
+      ```[tasklist]
+      ### The items to complete to satisfy the Definition of Done.
+      - [ ] I have fixed the bug, and everything now works as expected.
+      - [ ] I have manually tested the changes to confirm that no bugs or behavior changes were introduced.
+      - [ ] All unit tests executed and passed locally after PR work is complete. _(Why? Refer to 'Additional Information' below.)_
+      ```
+  validations:
+    required: true
+    render: markdown
+
+- type: textarea
+  attributes:
+    label: "Additional Information:"
+    description: DO NOT CHANGE ANYTHING BELOW!!
+    value: |
+      **_<details closed><summary>Unit Tests</summary>_**
+      
+      Reasons for local unit test execution:
+      - Unit tests might pass locally but not in the CI environment during the status check process or vice-versa.
+      - Tests might pass on the developer's machine but not necessarily on the code reviewer's machine.
+      - If you notice that the test status check has passed but the test failed locally, please notify a project maintainer!
+
+      💡Warning💡
+      If the unit tests pass remotely and are not executed locally, this means we could be letting a bug slip into production.
+      Though bugs will always exist in some capacity, we should all do our part to help prevent them from happening.
+      </details>
+
+      **_<details closed><summary>Change Type Labels</summary>_**
+      
+      | Change Type              | Label                     |
+      |:-------------------------|:--------------------------|
+      | Bug Fixes                | `🐛bug`                   |
+      | Breaking Changes         | `🧨breaking changes`      |
+      | New Feature              | `✨new feature`           |
+      | CICD Changes             | `♻️cicd`                  |
+      | Config Changes           | `⚙️config`                |
+      | Performance Improvements | `🏎️performance`           |
+      | Code Doc Changes         | `🗒️documentation/code`    |
+      | Product Doc Changes      | `📝documentation/product` |
+      </details>
+
+      **_<details closed><summary>Priority Type Labels</summary>_**
+      
+      | Priority Type       | Label             |
+      |:--------------------|:------------------|
+      | Low Priority        | `low priority`    |
+      | Medium Priority     | `medium priority` |
+      | High Priority       | `high priority`   |
+      </details>
+
 - type: checkboxes
   id: terms
   attributes:
