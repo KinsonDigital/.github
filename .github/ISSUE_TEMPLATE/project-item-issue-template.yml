@@ -80,6 +80,10 @@ body:
       - Unit tests might pass locally but not in the CI environment during the status check process or vice-versa.
       - Tests might pass on the developer's machine but not necessarily on the code reviewer's machine.
       - If you notice that the test status check has passed but the test failed locally, please notify a project maintainer!
+
+      💡Warning💡
+      If the unit tests pass remotely and are not executed locally, this means we could be letting a bug slip into production.
+      Though bugs will always exist in some capacity, we should all do our part to help prevent them from happening.
       </details>
 
       **_<details closed><summary>Change Type Labels</summary>_**
