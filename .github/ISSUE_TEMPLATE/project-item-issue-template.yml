@@ -84,16 +84,16 @@ body:
 
       **_<details closed><summary>Change Type Labels</summary>_**
       
-      | Change Type         | Label                |
-      |---------------------|----------------------|
-      | Bug Fixes           | `🐛bug` |
-      | Breaking Changes    | `🧨breaking changes` |
-      | New Feature         | `✨new feature` |
-      | CICD Changes        | `♻️cicd` |
-      | Config Changes      | `⚙️config` |
-      | Performance Improvements | `🏎️performance` |
-      | Code Doc Changes    | `🗒️documentation/code` |
-      | Product Doc Changes | `📝documentation/product` |
+      | Change Type              | Label                     |
+      |:-------------------------|:--------------------------|
+      | Bug Fixes                | `🐛bug`                   |
+      | Breaking Changes         | `🧨breaking changes`      |
+      | New Feature              | `✨new feature`           |
+      | CICD Changes             | `♻️cicd`                  |
+      | Config Changes           | `⚙️config`                |
+      | Performance Improvements | `🏎️performance`           |
+      | Code Doc Changes         | `🗒️documentation/code`    |
+      | Product Doc Changes      | `📝documentation/product` |
       </details>
 
       **_<details closed><summary>Priority Type Labels</summary>_**
