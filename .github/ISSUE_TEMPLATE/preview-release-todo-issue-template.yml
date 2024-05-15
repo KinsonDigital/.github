@@ -14,8 +14,8 @@ body:
       ### Complete the following items to perform a release.
       - [ ] All of the issues in the assigned milestone are closed and all issue tasks are complete.
       - [ ] The `🚀Preview Release` label has been added to this issue.
-      - [ ] This issue is assigned to a project.
-      - [ ] This issue is assigned to a milestone.
+      - [ ] This pr is assigned to a project.
+      - [ ] This pr is assigned to a milestone.
       - [ ] The release pull request is linked to this issue.
       - [ ] All of the unit tests have been executed locally and have passed. _(Check out the appropriate branch before running tests)_.
       - [ ] The version has been updated. _(All changes made directly on a 'prev-release' branch)_.
