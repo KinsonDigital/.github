@@ -1,7 +1,7 @@
 name: 🚀 Production Release To Do List
 description: Used to perform a release (Project maintainers only).
 title: "🚀Production Release"
-labels: [🚀Production Release]
+labels: [🚀production-release]
 projects: ["KinsonDigital/11"]
 body:
 

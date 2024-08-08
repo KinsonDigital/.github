@@ -89,9 +89,9 @@ body:
       
       | Priority Type       | Label             |
       |---------------------|-------------------|
-      | Low Priority        | `low priority`    |
-      | Medium Priority     | `medium priority` |
-      | High Priority       | `high priority`   |
+      | Low Priority        | `low-priority`    |
+      | Medium Priority     | `medium-priority` |
+      | High Priority       | `high-priority`   |
       </details>
 
 - type: checkboxes

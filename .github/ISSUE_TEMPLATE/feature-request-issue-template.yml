@@ -1,7 +1,7 @@
 name: ✨ Feature Request
 description: Add a new feature (Outside contributors only).
 title: "✨"
-labels: [✨new feature]
+labels: [✨new-feature]
 projects: ["KinsonDigital/11"]
 body:
 - type: checkboxes
