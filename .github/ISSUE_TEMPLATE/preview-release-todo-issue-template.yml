@@ -12,12 +12,12 @@ body:
     value: |
       ```[tasklist]
       ### Complete the following items to perform a release.
-      - [ ] All of the issues in the assigned milestone are closed and all issue tasks are complete.
+      - [ ] All issues in the assigned milestone are closed, and all issue tasks are complete.
       - [ ] The `🚀Preview Release` label has been added to this issue.
       - [ ] This pr is assigned to a project.
       - [ ] This pr is assigned to a milestone.
       - [ ] The release pull request is linked to this issue.
-      - [ ] All of the unit tests have been executed locally and have passed. _(Check out the appropriate branch before running tests)_.
+      - [ ] All unit tests have been executed locally and passed. _(Check out the appropriate branch before running tests)_.
       - [ ] The version has been updated. _(All changes made directly on a 'prev-release' branch)_.
       - [ ] The release notes have been created and added. _(All changes made directly on a 'prev-release' branch)_.
       - [ ] All manual QA Testing completed. _(if applicable)_
@@ -60,7 +60,7 @@ body:
       - If you notice that the test status check has passed but the test failed locally, please notify a project maintainer!
 
       💡Warning💡
-      If the unit tests pass remotely and are not executed locally, this means we could be letting a bug slip into production.
+      If the unit tests pass remotely and are not executed locally, we could let a bug slip into production.
       Though bugs will always exist in some capacity, we should all do our part to help prevent them from happening.
       </details>
 
@@ -79,24 +79,7 @@ body:
       <AssemblyVersion>1.2.3</AssemblyVersion>
       ```
 
-      Version changes should be committed to a _**prev-release**_ head branch for the the pull request linked to this issue.
-      </details>
-
-      ---
-
-      **_<details closed><summary>Release Notes</summary>_**
-
-      Release notes are created automatically when running the _**🚁Prepare Release**_ workflow.  The release notes
-      should be reviewed and changed appropriately.
-
-      Release note file names must follow a particular syntax and are in markdown format so they can be added to the release.
-
-      #### Release Notes File Name Syntax:
-      - **Preview Release Notes:**
-        - **Syntax:** Release-Notes-v#.#.#-preview.#.md
-        - **Example:** Release-Notes-v1.2.3-preview.4.md
-
-      Release note changes should be committed to a _**prev-release**_ head branch for the the pull request linked to this issue.
+      Version changes should be committed to a _**prev-release**_ head branch for the pull request linked to this issue.
       </details>
 
       ---

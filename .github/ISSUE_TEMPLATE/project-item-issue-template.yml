@@ -24,7 +24,7 @@ body:
     value: |
       ```[tasklist]
       ### The items to complete to satisfy the Definition of Done.
-      - [ ] All unit tests executed and passed locally after PR work is complete. _(Why? Refer to 'Additional Information' below.)_
+      - [ ] All the unit tests have been executed and passed locally after PR work is complete. _(Why? Refer to 'Additional Information' below.)_
       ```
   validations:
     required: true
@@ -37,9 +37,9 @@ body:
     value: |
       ```[tasklist]
       ### The items to complete to satisfy the Definition of Done.
-      - [ ] Change type labels added to this issue.  Refer to the _**Change Type Labels**_ section below.
-      - [ ] Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
-      - [ ] Issue linked to the correct milestone _(if applicable)_.
+      - [ ] Add a change type label to the issue.  Refer to the _**Change Type Labels**_ section below.
+      - [ ] Add a priority label to the issue.  Refer to the _**Priority Type Labels**_ section below.
+      - [ ] Link the issue to the correct milestone _(if applicable)_.
       ```
   validations:
     required: true

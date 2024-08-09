@@ -77,9 +77,9 @@ body:
     value: |
       ```[tasklist]
       ### The items to complete to satisfy the Definition of Done.
-      - [ ] I have fixed the bug, and everything now works as expected.
+      - [ ] I have fixed the bug, and everything works as expected.
       - [ ] I have manually tested the changes to confirm that no bugs or behavior changes were introduced.
-      - [ ] All unit tests executed and passed locally after PR work is complete. _(Why? Refer to 'Additional Information' below.)_
+      - [ ] All the unit tests have been executed and passed locally after PR work is complete. _(Why? Refer to 'Additional Information' below.)_
       ```
   validations:
     required: true
