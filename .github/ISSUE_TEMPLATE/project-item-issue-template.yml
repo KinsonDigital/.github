@@ -37,8 +37,8 @@ body:
     value: |
       ```[tasklist]
       ### The items to complete to satisfy the Definition of Done.
-      - [ ] Add a change type label to the issue.  Refer to the _**Change Type Labels**_ section below.
-      - [ ] Add a priority label to the issue.  Refer to the _**Priority Type Labels**_ section below.
+      - [ ] Add a change type label to the issue. Refer to the _**Change Type Labels**_ section below.
+      - [ ] Add a priority label to the issue. Refer to the _**Priority Type Labels**_ section below.
       - [ ] Link the issue to the correct milestone _(if applicable)_.
       ```
   validations:
