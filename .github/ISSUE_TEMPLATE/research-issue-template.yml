@@ -35,11 +35,9 @@ body:
     label: Acceptance Criteria
     description: The items to complete to satisfy the Definition of Done.
     value: |
-      ```[tasklist]
       ### The items to complete to satisfy the Definition of Done.
       - [ ] Research complete and issues created _(if needed)_.
       - [ ] If any issues were created, they have been added to the _**Related Work**_ section below.
-      ```
   validations:
     required: true
     render: markdown
@@ -48,10 +46,8 @@ body:
   attributes:
     label: ToDo Items
     value: |
-      ```[tasklist]
       ### The items to complete to satisfy the Definition of Done.
       - [ ] Priority label added to this issue.  Refer to the _**Priority Type Labels**_ section below.
-      ```
   validations:
     required: true
     render: markdown
