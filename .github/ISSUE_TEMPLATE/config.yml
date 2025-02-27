@@ -1,1 +1,9 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Kinson Digital Community (Discord)
+    url: https://discord.gg/qewu6fNgv7
+    about: Join us on Discord!
+
+  - name: Velaptor Documentation
+    url: https://docs.velaptor.io
+    about: Want to learn how to build games using Velaptor?
