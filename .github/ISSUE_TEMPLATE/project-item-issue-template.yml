@@ -1,19 +1,12 @@
-name: 🚧 Project Item
-description: Create an issue for the project (Project maintainers only).
-title: "🚧"
+name: 🚧 Feature
+description: Add a new feature.
+type: ["Feature"]
 projects: ["KinsonDigital/11"]
 body:
-- type: checkboxes
-  attributes:
-    label: Complete The Item Below
-    options:
-    - label: I have updated the title without removing the 🚧 emoji.
-      required: true
-
 - type: textarea
   attributes:
     label: Description
-    description: A description of the feature and/or change.
+    description: A description of the feature.
   validations:
     required: true
 
@@ -23,7 +16,8 @@ body:
     description: The items to complete to satisfy the Definition of Done.
     value: |
       ### The items to complete to satisfy the Definition of Done.
-      - [ ] All the unit tests have been executed and passed locally after the PR work is complete. _(Why? Refer to 'Additional Information' below.)_
+      - [ ] Full manual testing of the feature has been completed.
+      - [ ] All the unit tests have been executed and passed locally after the PR work is complete.
   validations:
     required: true
     render: markdown
@@ -34,24 +28,11 @@ body:
     description: Complete the following items before requesting a PR review.
     value: |
       ### The items to complete to satisfy the Definition of Done.
-      - [ ] Add a change type label to the issue. Refer to the _**Change Type Labels**_ section below.
-      - [ ] Add a priority label to the issue. Refer to the _**Priority Type Labels**_ section below.
+      - [ ] Add a priority label to the issue.
       - [ ] Link the issue to the correct milestone _(if applicable)_.
   validations:
     required: true
     render: markdown
-
-- type: textarea
-  attributes:
-    label: Issue Dependencies
-    placeholder: |
-      Example:
-        - #10
-        - #20
-    description: |
-      A list of issues that are dependencies of this issue and need to be completed first.
-  validations:
-    required: false
 
 - type: textarea
   attributes:
@@ -64,46 +45,6 @@ body:
       A list of issues related to this issue but are not a dependency.
   validations:
     required: false
-
-- type: textarea
-  attributes:
-    label: "Additional Information:"
-    description: DO NOT CHANGE ANYTHING BELOW!!
-    value: |
-      **_<details closed><summary>Unit Tests</summary>_**
-      
-      Reasons for local unit test execution:
-      - Unit tests might pass locally but not in the CI environment during the status check process or vice-versa.
-      - Tests might pass on the developer's machine but not necessarily on the code reviewer's machine.
-      - If you notice that the test status check has passed but the test failed locally, please notify a project maintainer!
-
-      💡Warning💡
-      If the unit tests pass remotely and are not executed locally, this means we could be letting a bug slip into production.
-      Though bugs will always exist in some capacity, we should all do our part to help prevent them from happening.
-      </details>
-
-      **_<details closed><summary>Change Type Labels</summary>_**
-      
-      | Change Type              | Label                     |
-      |:-------------------------|:--------------------------|
-      | Bug Fixes                | `🐛bug`                   |
-      | Breaking Changes         | `🧨breaking-changes`      |
-      | New Feature              | `✨new-feature`           |
-      | CICD Changes             | `♻️cicd`                  |
-      | Config Changes           | `⚙️config`                |
-      | Performance Improvements | `🏎️performance`           |
-      | Code Doc Changes         | `🗒️documentation/code`    |
-      | Product Doc Changes      | `📝documentation/product` |
-      </details>
-
-      **_<details closed><summary>Priority Type Labels</summary>_**
-      
-      | Priority Type       | Label             |
-      |---------------------|-------------------|
-      | Low Priority        | `low priority`    |
-      | Medium Priority     | `medium priority` |
-      | High Priority       | `high priority`   |
-      </details>
 
 - type: checkboxes
   id: terms

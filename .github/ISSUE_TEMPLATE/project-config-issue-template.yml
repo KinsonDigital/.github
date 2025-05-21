@@ -1,0 +1,34 @@
+name: 🔧 Project Config
+description: Project related configuration changes. (Not changes to the software itself.)
+projects: ["KinsonDigital/11"]
+type: "Project-Config"
+body:
+- type: markdown
+  attributes:
+    value: |
+      > [!NOTE]
+      > The title should be short and descriptive.
+
+- type: checkboxes
+  attributes:
+    label: Complete The Items Below
+    options:
+    - label: A priority label has been added to this issue.
+      required: true
+
+- type: textarea
+  attributes:
+    label: Description
+    description: A description of project configuration changes or additions.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Acceptance Criteria
+    description: The items to complete to satisfy the Definition of Done.
+    value: |
+      ### The items to complete to satisfy the Definition of Done.
+  validations:
+    required: true
+    render: markdown
