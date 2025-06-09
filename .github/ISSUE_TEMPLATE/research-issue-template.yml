@@ -1,6 +1,6 @@
 name: 🔬 Research Item
 description: Create an issue to perform research (Project maintainers only).
-type: ["Research"]
+type: "Research"
 projects: ["KinsonDigital/11"]
 body:
 - type: markdown
