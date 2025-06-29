@@ -1,6 +1,7 @@
 name: ✨ Feature Request
 description: Add a new feature (Outside contributors only).
 projects: ["KinsonDigital/11"]
+type: "Feature"
 body:
 - type: checkboxes
   attributes:

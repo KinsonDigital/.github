@@ -1,6 +1,6 @@
 name: 🚧 Feature
 description: Add a new feature.
-type: ["Feature"]
+type: "Feature"
 projects: ["KinsonDigital/11"]
 body:
 - type: textarea
