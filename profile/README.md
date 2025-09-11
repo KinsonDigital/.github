@@ -21,8 +21,8 @@ It is our mission to create high-quality game development and CICD-related tools
 ### **Community:**
 
 - [![discord-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/discord.svg)](https://discord.gg/qewu6fNgv7) The best place to come hang out, learn how to contribute, and chat!!
-- ![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-dark-mode.svg#gh-dark-mode-only)
-![twitter-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-light-mode.svg#gh-light-mode-only)[Calvin Wilkinson](https://x.com/KDCoder) - Organization Owner / Maintainer
+- ![x-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-dark-mode.svg#gh-dark-mode-only)
+![x-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-light-mode.svg#gh-light-mode-only)[Calvin Wilkinson](https://x.com/KDCoder) - Organization Owner / Maintainer
 
 
 ### **News/Blog**:
