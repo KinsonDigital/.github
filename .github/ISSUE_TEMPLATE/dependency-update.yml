@@ -1,0 +1,73 @@
+name: 📦 Dependency Update
+description: Update project dependencies.
+type: "Dependency-Update"
+projects: ["KinsonDigital/11"]
+body:
+- type: textarea
+  attributes:
+    label: Description
+    description: A description of the dependency update.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Updating Version From
+    description: Which version of the dependency are you updating from?
+    placeholder: This is the version before the update.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Updating Version To
+    description: Which version of the dependency are you updating to?
+    placeholder: This is the version after the update.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Acceptance Criteria
+    description: The items to complete to satisfy the Definition of Done.
+    value: |
+      ### The items to complete to satisfy the Definition of Done.
+      - [ ] The dependency has been updated.
+      - [ ] All the unit tests have been executed and passed locally after the PR work is complete.
+      - [ ] Full manual testing of the dependency update has been completed.
+  validations:
+    required: true
+    render: markdown
+
+- type: textarea
+  attributes:
+    label: ToDo Items
+    description: Complete the following items before requesting a PR review.
+    value: |
+      ### The items to complete to satisfy the Definition of Done.
+      - [ ] Add a priority label to the issue.
+      - [ ] Link the issue to the correct milestone _(if applicable)_.
+  validations:
+    required: true
+    render: markdown
+
+- type: textarea
+  attributes:
+    label: Related Work
+    placeholder: |
+      Example:
+        - #10 
+        - #20
+    description: |
+      A list of issues related to this issue but are not a dependency.
+  validations:
+    required: false
+
+- type: checkboxes
+  id: terms
+  attributes:
+    label: Code of Conduct
+    description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/KinsonDigital/.github/blob/main/docs/code_of_conduct.md).
+    options:
+      - label: I agree to follow this project's Code of Conduct.
+        required: true
