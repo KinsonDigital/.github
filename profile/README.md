@@ -18,7 +18,7 @@ The **Kinson Digital** organization is a great community to collaborate, contrib
 ### **Mission:**  
 It is our mission to create high-quality game development and CICD-related tools and libraries that are backed by a welcoming community to foster great open source.
 
-### **Community:**
+### **Community:****
 
 - [![discord-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/discord.svg)](https://discord.gg/qewu6fNgv7) The best place to come hang out, learn how to contribute, and chat!!
 - ![x-logo](https://raw.githubusercontent.com/KinsonDigital/.github/main/Images/x-logo-16x16-dark-mode.svg#gh-dark-mode-only)
