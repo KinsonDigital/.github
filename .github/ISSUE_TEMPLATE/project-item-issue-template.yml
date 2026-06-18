@@ -28,7 +28,6 @@ body:
     description: Complete the following items before requesting a PR review.
     value: |
       ### The items to complete to satisfy the Definition of Done.
-      - [ ] Add a priority label to the issue.
       - [ ] Link the issue to the correct milestone _(if applicable)_.
   validations:
     required: true
