@@ -51,6 +51,7 @@ body:
     description: Which operating system(s) does the bug occur?
     multiple: true
     options:
+    - All
     - Windows
     - Linux
     - Android
