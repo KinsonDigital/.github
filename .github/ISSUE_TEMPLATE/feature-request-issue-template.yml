@@ -7,9 +7,7 @@ body:
   attributes:
     label: Complete The Items Below
     options:
-    - label: I have updated the title without removing the ✨ emoji.
-      required: true
-    - label: I searched whether or not a feature request already exists.
+    - label: I searched whether or not the feature itself and a feature request issue already exists.
       required: true
 
 - type: textarea
