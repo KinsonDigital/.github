@@ -3,7 +3,7 @@
 ## Reporting Potential Security Issues
 
 If you have encountered a potential security vulnerability in this project,
-please report it to us at <kinsondigital@gmail.com>. We will work with you to
+please report it to us at <calvin@kinsondigital.net>. We will work with you to
 verify the vulnerability and patch it.
 
 When reporting issues, please provide the following information:
